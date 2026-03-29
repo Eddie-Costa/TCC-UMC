@@ -1,0 +1,84 @@
+/* FOnte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #EBEBEB;
+}
+
+.nav-container{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 10px auto 0 auto;
+    padding: 0 20px;
+}
+
+.nav_grid{
+    display: flex;
+    gap: 30px;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LinksContainer{
+    flex: 2;
+}
+
+.links{
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    text-align: center;
+
+}
+
+.linksflex{
+    display: flex;
+    gap: 30px;
+}
+
+.link{
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.link:hover{
+    border-bottom-color: #002E59;
+}
+
+.nav-logo{
+    width: 200px;
+    height: 50px;
+}
+
+.nav-link-text{
+    font-family: "Inter";
+    color: #002E59;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.login-Button{
+    background-color: #002E59;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.nav-LoginButton-text{
+    font-family: "Inter";
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    top: 25%;
+
+}
