@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class LoginPageController {
+public class SubscriptionPageController {
 
-    @GetMapping("/login")
+    @GetMapping("/Subscription")
     public ModelAndView loginPage() {
-        ModelAndView mv = new ModelAndView("loginPage");
+        ModelAndView mv = new ModelAndView("subscriptionPage");
         return mv;
     }
 
-    @PostMapping("/SendFormLogin")
+    @PostMapping("/SendFormRegister")
     public ModelAndView SendForm(String email, String senha) {
 
         UsuarioDTO usuario = new UsuarioDTO();
@@ -27,6 +27,5 @@ public class LoginPageController {
         ModelAndView mv = new ModelAndView("TelaSucesso");
         return mv;
     }
-
 
 }

@@ -7,15 +7,18 @@
     <title>Login</title>
 </head>
 <body>
+    <a href="/home">Home</a>
     <h1>LOGIN</h1>
-    <form action="" method="post" class="form-login">
+    <form action="/SendFormLogin" method="post" class="form-login">
         <label>E-mail</label>
-        <input type="email" name="email" required>
+        <input name="email" th:value="${email}" type="email" required >
 
         <label>Senha:</label>
-        <input type="password" name="senha" required>
+        <input name="senha" th:value="${senha}" type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial">
 
         <button type="submit">Entrar</button>
+        
     </form>
+    <a href="/Subscription">Registrar</a>
 </body>
 </html>
