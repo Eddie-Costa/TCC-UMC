@@ -9,7 +9,7 @@
 <body>
 <a href="/home">Home</a>
 <h1>Registrar</h1>
-<form action="/SendFormRegister" method="post" class="form-login">
+<form action="/Subscription" th:object="${usuario}" method="post" class="form-login">
     <label>E-mail</label>
     <input name="email" th:value="${email}" type="email" required >
 

@@ -1,32 +1,39 @@
 package com.example.controller;
 
 import com.example.dto.UsuarioDTO;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class LoginPageController {
 
     @GetMapping("/login")
-    public ModelAndView loginPage() {
-        ModelAndView mv = new ModelAndView("loginPage");
-        return mv;
+    public String loginPage(Model model) {
+        model.addAttribute("usuario", new UsuarioDTO());
+        return "loginPage";
     }
 
-    @PostMapping("/SendFormLogin")
-    public ModelAndView SendForm(String email, String senha) {
+    @PostMapping("/login")
+    public String fazerLogin(
+            @Valid @ModelAttribute("usuario") UsuarioDTO usuario,
+            BindingResult result,
+            Model model) {
 
-        UsuarioDTO usuario = new UsuarioDTO();
-        usuario.setEmail(email);
-        usuario.setSenha(senha);
+        if (result.hasErrors()) {
+            return "loginPage";
+        }
 
-        System.out.println(usuario.getEmail() + " " + usuario.getSenha());
+//        //troca por query
+        if ("admin@email.com".equals(usuario.getEmail()) &&
+                "123456".equals(usuario.getSenha())) {
 
-        ModelAndView mv = new ModelAndView("TelaSucesso");
-        return mv;
+            return "telaSucesso";
+        }
+
+        model.addAttribute("erroLogin", "Email ou senha inválidos");
+        return "loginPage";
     }
-
-
 }
