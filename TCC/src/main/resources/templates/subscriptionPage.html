@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/LoginPageStyle.css">
+    <title>Registrar</title>
+</head>
+<body>
+<a href="/home">Home</a>
+<h1>Registrar</h1>
+<form action="/Subscription" th:object="${usuario}" method="post" class="form-login">
+    <label>E-mail</label>
+    <input name="email" th:value="${email}" type="email" required >
+
+    <label>Senha:</label>
+    <input name="senha" th:value="${senha}" type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial">
+
+    <button type="submit">Entrar</button>
+
+</form>
+<a href="/login">Logar</a>
+</body>
+</html>
