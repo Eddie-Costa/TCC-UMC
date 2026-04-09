@@ -6,6 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import DAO.usuarioDAO;
+
+import java.sql.SQLException;
 
 @Controller
 public class LoginPageController {
@@ -20,16 +23,20 @@ public class LoginPageController {
     public String fazerLogin(
             @Valid @ModelAttribute("usuario") UsuarioDTO usuario,
             BindingResult result,
-            Model model) {
+            Model model) throws SQLException {
 
         if (result.hasErrors()) {
             return "loginPage";
         }
 
 //        //troca por query
-        if ("admin@email.com".equals(usuario.getEmail()) &&
-                "123456".equals(usuario.getSenha())) {
-
+//        if ("admin@email.com".equals(usuario.getEmail()) &&
+//                "123456".equals(usuario.getSenha())) {
+//
+//            return "telaSucesso";
+//        }
+        usuarioDAO usuarioDAO = new usuarioDAO();
+        if(usuarioDAO.QueryLoginUsuario(usuario.getEmail(),usuario.getSenha()) == "1"){
             return "telaSucesso";
         }
 
