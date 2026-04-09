@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/IndexStyle.css">
+    <link rel="stylesheet"th:href="@{/css/IndexStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/navStyle.css}">
     <title>TCC_APPLICATION</title>
 </head>
 <body>
-    <h1>TCC</h1>
-    <a href="/login">Logar</a>
-    <a href="/subscription">Registrar-se</a>
+    <div th:replace="fragments/nav :: nav"></div>
 </body>
 </html>
