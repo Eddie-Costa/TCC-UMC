@@ -2,20 +2,26 @@ package com.example.controller;
 
 
 import com.example.dto.LoginDTO;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import DAO.usuarioDAO;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import javax.swing.JOptionPane;
+import com.example.service.LoginAttemptService;
 
 
 import java.sql.SQLException;
 
 @Controller
 public class LoginPageController {
+
+    @Autowired
+    private LoginAttemptService loginAttemptService;
+
 
     @GetMapping("/login")
     public String loginPage(Model model) {
@@ -25,9 +31,15 @@ public class LoginPageController {
 
     @PostMapping("/login")
     public String fazerLogin(
-            @Valid @ModelAttribute("usuario") LoginDTO usuario,
-            BindingResult result,
-            Model model) throws SQLException {
+            @Valid @ModelAttribute("usuario") LoginDTO usuarioDTO, BindingResult result, Model model, HttpSession session) throws SQLException {
+
+        String email = usuarioDTO.getEmail();
+
+        // 🔒 Verifica bloqueio
+        if (LoginAttemptService.estaBloqueado(email)) {
+            model.addAttribute("mensagemDeErro", "Conta bloqueada por muitas tentativas. Tente mais tarde.");
+            return "loginPage";
+        }
 
         if (result.hasErrors()) {
             model.addAttribute("mensagemDeErro", "Erro ao fazer login, tente novamente!!!");
@@ -39,13 +51,28 @@ public class LoginPageController {
         usuarioDAO usuarioDAO = new usuarioDAO();
 
         //Requisição para o BD Buscar a senha criptografada e comparar com a senha digitada.
-        String senhaHash = usuarioDAO.QueryLoginUsuario(usuario.getEmail());
+        String senhaHash = usuarioDAO.QueryLoginUsuario(usuarioDTO.getEmail());
 
-        if(encoder.matches(usuario.getSenha(), senhaHash)) {
-            return "index";
+        if(senhaHash != null && encoder.matches(usuarioDTO.getSenha(), senhaHash)) {
+
+            //Sucesso de Login
+            loginAttemptService.loginSucesso(email);
+
+            //Cria sessao de usuario
+            session.setAttribute("usuarioLogado", usuarioDTO);
+            session.setMaxInactiveInterval(900);
+
+            return "redirect:/home";
         }
 
-        model.addAttribute("mensagem", "Erro ao fazer login, tente novamente!!!");
+        //Erro de Login
+        loginAttemptService.loginFalhou(email);
+
+        if (loginAttemptService.getTentativas(email) >= 5) {
+            model.addAttribute("mensagemDeErro", "Conta bloqueada por 10 minutos.");
+        } else {
+            model.addAttribute("mensagemDeErro", "Email ou senha inválidos.");
+        }
         return "loginPage";
     }
 }

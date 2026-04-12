@@ -8,10 +8,22 @@
 <body>
     <div th:fragment="nav" class="nav">
         <nav class="nav-itens">
+
             <a th:href="@{/home}" class="logo">Home</a>
-            <a th:href="@{/login}" class="login">Login</a>
+
+            <!-- Usuário NÃO logado -->
+            <a th:if="${session.usuarioLogado == null}" th:href="@{/login}" class="login">Login</a>
+
+            <!-- Usuário logado -->
+            <div th:if="${session.usuarioLogado != null}" class="user-area">
+                
+                <a th:text="${session.usuarioLogado.email}"></a>
+                <img th:src="@{/images/UserIcon.png}" alt="Usuário"class="user-icon">
+                
+                <a th:if="${session.usuarioLogado != null}" th:href="@{/logout}" class="login">Logout</a>
+
+            </div>
         </nav>
     </div>
-
 </body>
 </html>
