@@ -15,7 +15,7 @@ public class usuarioDAO {
         Connection conn = DriverManager.getConnection(url, user, password);
 
         // SQL
-        String sql = "INSERT INTO pessoas (NOME, SOBRENOME, EMAIL, SENHA) VALUES (?, ?, ?, SHA2(?,256))";
+        String sql = "INSERT INTO pessoas (NOME, SOBRENOME, EMAIL, SENHA) VALUES (?, ?, ?, ?)";
 
         // preparar
         PreparedStatement stmt = conn.prepareStatement(sql);
@@ -34,29 +34,23 @@ public class usuarioDAO {
         conn.close();
     }
 
-    public String QueryLoginUsuario(String EMAIL, String SENHA) throws SQLException {
+    public String QueryLoginUsuario(String EMAIL) throws SQLException {
         // conexão
         Connection conn = DriverManager.getConnection(url, user, password);
 
         // SQL
-        String sql = "SELECT count(p.id) FROM pessoas p WHERE p.email = ? and p.senha = ?";
+        String sql = "Select SENHA FROM pessoas where EMAIL = ?";
 
         // preparar
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, EMAIL);
-        stmt.setString(2, SENHA);
 
         //Realizar Querys
         ResultSet rs = stmt.executeQuery();
 
         if (rs.next()) {
-            int count = rs.getInt(1);
-
-            if (count > 0) {
-                resultado = "1";
-            } else {
-                resultado = "0";
-            }
+            resultado = rs.getString("SENHA");
+            System.out.println("Senha: " + resultado);
         }
 
         // fechar

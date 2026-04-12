@@ -1,12 +1,16 @@
 package com.example.controller;
 
-import com.example.dto.UsuarioDTO;
+
+import com.example.dto.LoginDTO;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import DAO.usuarioDAO;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import javax.swing.JOptionPane;
+
 
 import java.sql.SQLException;
 
@@ -15,32 +19,33 @@ public class LoginPageController {
 
     @GetMapping("/login")
     public String loginPage(Model model) {
-        model.addAttribute("usuario", new UsuarioDTO());
+        model.addAttribute("usuario", new LoginDTO());
         return "loginPage";
     }
 
     @PostMapping("/login")
     public String fazerLogin(
-            @Valid @ModelAttribute("usuario") UsuarioDTO usuario,
+            @Valid @ModelAttribute("usuario") LoginDTO usuario,
             BindingResult result,
             Model model) throws SQLException {
 
         if (result.hasErrors()) {
+            model.addAttribute("mensagemDeErro", "Erro ao fazer login, tente novamente!!!");
             return "loginPage";
         }
 
-//        //troca por query
-//        if ("admin@email.com".equals(usuario.getEmail()) &&
-//                "123456".equals(usuario.getSenha())) {
-//
-//            return "telaSucesso";
-//        }
+        //Encriptador
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(10);
         usuarioDAO usuarioDAO = new usuarioDAO();
-        if(usuarioDAO.QueryLoginUsuario(usuario.getEmail(),usuario.getSenha()) == "1"){
-            return "telaSucesso";
+
+        //Requisição para o BD Buscar a senha criptografada e comparar com a senha digitada.
+        String senhaHash = usuarioDAO.QueryLoginUsuario(usuario.getEmail());
+
+        if(encoder.matches(usuario.getSenha(), senhaHash)) {
+            return "index";
         }
 
-        model.addAttribute("erroLogin", "Email ou senha inválidos");
+        model.addAttribute("mensagem", "Erro ao fazer login, tente novamente!!!");
         return "loginPage";
     }
 }

@@ -1,14 +1,14 @@
 package com.example.controller;
 
-import com.example.dto.UsuarioDTO;
+import com.example.dto.SubscriptionDTO;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.ModelAndView;
 import DAO.usuarioDAO;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.sql.SQLException;
 
@@ -17,24 +17,26 @@ public class SubscriptionPageController {
 
     @GetMapping("/Subscription")
     public String loginPage(org.springframework.ui.Model model) {
-        model.addAttribute("usuario", new UsuarioDTO());
+        model.addAttribute("usuario", new SubscriptionDTO());
         return "subscriptionPage";
     }
 
     @PostMapping("/Subscription")
     public String registrar(
-            @Valid @ModelAttribute("usuario") UsuarioDTO usuario,
+            @Valid @ModelAttribute("usuario") SubscriptionDTO usuario,
             BindingResult result) throws SQLException {
 
         if (result.hasErrors()) {
             return "subscriptionPage";
         }
 
-        //vira query para BD
-//        System.out.println(usuario.getEmail() + " " + usuario.getSenha());
-        usuarioDAO usuarioDAO = new usuarioDAO();
-        usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail(), usuario.getSenha());
+        //Encriptador
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(10);
 
-        return "telaSucesso";
+        //Inserção de dados no BD
+        usuarioDAO usuarioDAO = new usuarioDAO();
+        usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail(), encoder.encode(usuario.getSenha()));
+
+        return "loginPage";
     }
 }
