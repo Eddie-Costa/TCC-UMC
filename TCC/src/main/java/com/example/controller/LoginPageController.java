@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import DAO.usuarioDAO;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.example.service.LoginAttemptService;
-
+import com.example.service.TwoFactorService;
+import com.example.service.emailService;
 
 import java.sql.SQLException;
 
@@ -22,6 +23,11 @@ public class LoginPageController {
     @Autowired
     private LoginAttemptService loginAttemptService;
 
+    @Autowired
+    private TwoFactorService twoFactorService;
+
+    @Autowired
+    private emailService emailService;
 
     @GetMapping("/login")
     public String loginPage(Model model) {
@@ -35,7 +41,7 @@ public class LoginPageController {
 
         String email = usuarioDTO.getEmail();
 
-        // 🔒 Verifica bloqueio
+        //Verifica bloqueio
         if (LoginAttemptService.estaBloqueado(email)) {
             model.addAttribute("mensagemDeErro", "Conta bloqueada por muitas tentativas. Tente mais tarde.");
             return "loginPage";
@@ -54,15 +60,17 @@ public class LoginPageController {
         String senhaHash = usuarioDAO.QueryLoginUsuario(usuarioDTO.getEmail());
 
         if(senhaHash != null && encoder.matches(usuarioDTO.getSenha(), senhaHash)) {
-
             //Sucesso de Login
             loginAttemptService.loginSucesso(email);
 
-            //Cria sessao de usuario
-            session.setAttribute("usuarioLogado", usuarioDTO);
-            session.setMaxInactiveInterval(900);
+            //2FA
+            String codigo = twoFactorService.gerarCodigo(email);
 
-            return "redirect:/home";
+            emailService.enviarCodigo(email, codigo);
+
+            session.setAttribute("email2FA", email);
+
+            return "redirect:/verificar";
         }
 
         //Erro de Login

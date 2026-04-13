@@ -1,6 +1,7 @@
 package DAO;
 
 import java.sql.*;
+import com.example.dto.LoginDTO;
 
 public class usuarioDAO {
 
@@ -61,6 +62,30 @@ public class usuarioDAO {
         return resultado;
     }
 
+    public LoginDTO buscarPorEmail(String email) throws SQLException {
 
+        String sql = "SELECT * FROM pessoas WHERE email = ?";
+
+        Connection conn = DriverManager.getConnection(url, user, password);
+
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, email);
+
+        ResultSet rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            LoginDTO usuario = new LoginDTO();
+
+            usuario.setEmail(rs.getString("email"));
+            usuario.setSenha(rs.getString("senha"));
+
+            // se tiver mais campos:
+            // usuario.setNome(rs.getString("nome"));
+
+            return usuario;
+        }
+
+        return null;
+    }
 
 }
