@@ -12,6 +12,8 @@
 
     <h1>LOGIN</h1>
     <form action="/login" th:object="${usuario}" method="post" class="form-login">
+
+
         <label>E-mail</label>
         <input name="email" th:value="${email}" type="email" required >
 
@@ -19,6 +21,7 @@
         <input name="senha" th:value="${senha}" type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial">
 
         <button type="submit">Entrar</button>
+        <p name="mensagemDeErro" th:text="${mensagemDeErro}"></p>
         <a href="/Subscription">Ainda não está cadastrado em nossa plataforma? clique aqui para Registrar</a>
     </form>
 
