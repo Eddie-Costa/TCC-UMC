@@ -1,0 +1,11 @@
+<form action="/validar2fa" method="post">
+    
+    <input type="hidden" name="email" th:value="${email}" />
+
+    <label>Digite o código:</label>
+    <input type="text" name="codigo" />
+
+    <button type="submit">Validar</button>
+
+    <p th:text="${erro}"></p>
+</form>

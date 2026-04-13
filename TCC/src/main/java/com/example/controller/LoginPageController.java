@@ -83,4 +83,27 @@ public class LoginPageController {
         }
         return "loginPage";
     }
+
+    @PostMapping("/validar2fa")
+    public String validar2FA(
+            @RequestParam String codigo,
+            HttpSession session,
+            Model model) throws SQLException {
+
+        String email = (String) session.getAttribute("email2FA");
+
+        if (email == null) {
+            return "loginPage"; 
+        }
+
+        usuarioDAO usuarioDAO = new usuarioDAO();
+
+        if ("1".equals(usuarioDAO.validar2FA(email, codigo))) {
+            session.removeAttribute("email2FA"); 
+            return "telaSucesso";
+        }
+
+        model.addAttribute("erro", "Código inválido ou expirado");
+        return "pagina2fa";
+    }
 }
