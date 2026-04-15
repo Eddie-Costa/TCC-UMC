@@ -13,25 +13,28 @@ public class usuarioDAO {
 
     public void InsertCadastroIntoBD(String NOME, String SOBRENOME, String EMAIL, String SENHA) throws SQLException {
         // conexão
-        try (Connection conn = DriverManager.getConnection(url, user, password)) { // Modifiquei
+        Connection conn = DriverManager.getConnection(url, user, password);
 
         // SQL
         String sql = "INSERT INTO pessoas (NOME, SOBRENOME, EMAIL, SENHA) VALUES (?, ?, ?, ?)";
 
-            // preparar
-            try (PreparedStatement stmt = conn.prepareStatement(sql)) { // Modifiquei
-                stmt.setString(1, NOME);
-                stmt.setString(2, SOBRENOME);
-                stmt.setString(3, EMAIL);
-                stmt.setString(4, SENHA);
+        // preparar
+        PreparedStatement stmt = conn.prepareStatement(sql);
 
-                // executar
-                stmt.executeUpdate();
-            } // Modifiquei
+        stmt.setString(1, NOME);
+        stmt.setString(2, SOBRENOME);
+        stmt.setString(3, EMAIL);
+        stmt.setString(4, SENHA);
 
-            System.out.println("Inserido com sucesso!");
-        } // Modifiquei
-    }
+        // executar
+        stmt.executeUpdate();
+
+        System.out.println("Inserido com sucesso!");
+
+        // fechar
+        stmt.close();
+        conn.close();
+        }
 
     public String QueryLoginUsuario(String EMAIL) throws SQLException {
         // conexão
@@ -44,15 +47,20 @@ public class usuarioDAO {
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, EMAIL);
 
-                    // Se encontrou usuario e senha correta
-                    if (rs.next()) {
+        //Realizar Querys
+        ResultSet rs = stmt.executeQuery();
 
         if (rs.next()) {
             resultado = rs.getString("SENHA");
             System.out.println("Senha: " + resultado);
         }
 
-        return "0"; // login invalido
+        // fechar
+        rs.close();
+        stmt.close();
+        conn.close();
+
+        return resultado;
     }
 
     public LoginDTO buscarPorEmail(String email) throws SQLException {
