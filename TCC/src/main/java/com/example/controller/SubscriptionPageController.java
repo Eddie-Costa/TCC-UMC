@@ -40,3 +40,5 @@ public class SubscriptionPageController {
         return "loginPage";
     }
 }
+
+// teste.M.Santhiago
