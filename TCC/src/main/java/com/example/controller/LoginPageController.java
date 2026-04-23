@@ -36,8 +36,7 @@ public class LoginPageController {
     }
 
     @PostMapping("/login")
-    public String fazerLogin(
-            @Valid @ModelAttribute("usuario") LoginDTO usuarioDTO, BindingResult result, Model model, HttpSession session) throws SQLException {
+    public String fazerLogin(@Valid @ModelAttribute("usuario") LoginDTO usuarioDTO, BindingResult result, Model model, HttpSession session) throws SQLException {
 
         String email = usuarioDTO.getEmail();
 

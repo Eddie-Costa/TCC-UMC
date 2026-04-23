@@ -44,23 +44,51 @@ public class VerificarController {
 
         String email = (String) session.getAttribute("email2FA");
 
-        // 🔒 Segurança
+        //  Segurança
         if (email == null) {
             return "redirect:/login";
         }
 
         if (twoFactorService.validarCodigo(email, codigo)) {
 
-            // 🔥 BUSCA USUÁRIO REAL
+            // BUSCA USUÁRIO REAL
             LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
 
-            // 🔐 CRIA SESSÃO CORRETA
+            // CRIA SESSÃO CORRETA
             session.setAttribute("usuarioLogado", usuario);
             session.setMaxInactiveInterval(900);
 
             session.removeAttribute("email2FA");
 
             return "redirect:/home";
+        }
+
+        // Código inválido
+        model.addAttribute("erro", "Código inválido ou expirado");
+        return "verificar";
+    }
+
+    @PostMapping("/verificarReset")
+    public String verificarCodigoRest(LoginDTO usuarioDTO,
+                                  @RequestParam String codigo,
+                                  HttpSession session,
+                                  Model model) throws SQLException {
+
+        String email = (String) session.getAttribute("email2FA");
+
+        //  Segurança
+        if (email == null) {
+            return "redirect:/ResetPassword_Verification";
+        }
+
+        if (twoFactorService.validarCodigo(email, codigo)) {
+
+            // BUSCA USUÁRIO REAL
+            LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
+
+            session.removeAttribute("email2FA");
+
+            return "redirect:/ResetPassword";
         }
 
         // Código inválido
