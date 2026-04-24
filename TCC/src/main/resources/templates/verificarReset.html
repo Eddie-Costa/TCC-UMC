@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Verificação 2FA</title>
+    <title>Verificação 2FA para resetar senha</title>
 </head>
 <body>
-
     <h2>Digite o código enviado para seu email</h2>
 
-    <form th:action="@{/verificarReset}" method="post">
+    <form th:action="@{/ResetVerificar}" method="post">
         <input type="text" name="codigo" placeholder="Digite o código" required>
         <button type="submit">Verificar</button>
     </form>
