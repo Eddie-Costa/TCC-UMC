@@ -14,11 +14,15 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.example.service.LoginAttemptService;
 import com.example.service.TwoFactorService;
 import com.example.service.emailService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.SQLException;
 
 @Controller
 public class LoginPageController {
+
+    private static final Logger logger = LoggerFactory.getLogger(LoginPageController.class);
 
     @Autowired
     private LoginAttemptService loginAttemptService;
@@ -36,18 +40,19 @@ public class LoginPageController {
     }
 
     @PostMapping("/login")
-    public String fazerLogin(
-            @Valid @ModelAttribute("usuario") LoginDTO usuarioDTO, BindingResult result, Model model, HttpSession session) throws SQLException {
+    public String fazerLogin(@Valid @ModelAttribute("usuario") LoginDTO usuarioDTO, BindingResult result, Model model, HttpSession session) throws SQLException {
 
         String email = usuarioDTO.getEmail();
 
         //Verifica bloqueio
         if (LoginAttemptService.estaBloqueado(email)) {
+            logger.warn("Tentativa de login em Conta bloqueada");
             model.addAttribute("mensagemDeErro", "Conta bloqueada por muitas tentativas. Tente mais tarde.");
             return "loginPage";
         }
 
         if (result.hasErrors()) {
+            logger.warn("Erro ao fazer login");
             model.addAttribute("mensagemDeErro", "Erro ao fazer login, tente novamente!!!");
             return "loginPage";
         }
@@ -64,8 +69,12 @@ public class LoginPageController {
             loginAttemptService.loginSucesso(email);
 
             //2FA
+            logger.info("Envio de codigo 2FA par o email: {}", email);
+
+            //Gerar token 2FA
             String codigo = twoFactorService.gerarCodigo(email);
 
+            //Enviar token 2FA para o email
             emailService.enviarCodigo(email, codigo);
 
             session.setAttribute("email2FA", email);
@@ -74,11 +83,15 @@ public class LoginPageController {
         }
 
         //Erro de Login
+        logger.warn("Erro ao fazer login");
         loginAttemptService.loginFalhou(email);
+        logger.warn("Erro ao fazer login numero de tentativas: {}", loginAttemptService.getTentativas(email));
 
         if (loginAttemptService.getTentativas(email) >= 5) {
+            logger.warn("Conta bloqueada por 10 minutos");
             model.addAttribute("mensagemDeErro", "Conta bloqueada por 10 minutos.");
         } else {
+            logger.warn("Email ou senha incorreto");
             model.addAttribute("mensagemDeErro", "Email ou senha inválidos.");
         }
         return "loginPage";
