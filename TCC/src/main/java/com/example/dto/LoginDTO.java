@@ -23,4 +23,11 @@ public class LoginDTO {
             message = "Senha deve conter maiúscula, minúscula, número e caractere especial"
     )
     private String senha;
+
+    @Size(min = 8, message = "A senha deve ter no mínimo 8 caracteres")
+    @Pattern(
+            regexp = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%^&+=!]).*$",
+            message = "Senha deve conter maiúscula, minúscula, número e caractere especial"
+    )
+    private String confirmarSenha;
 }

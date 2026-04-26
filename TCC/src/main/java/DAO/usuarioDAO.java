@@ -7,9 +7,7 @@ public class usuarioDAO {
 
     String resultado;
 
-    String url = "jdbc:mysql://localhost:3306/cadastro";
-    String user = "root";
-    String password = "72B4688B321DBD81718EC88A9BDCBCFD";
+    
 
     public void InsertCadastroIntoBD(String NOME, String SOBRENOME, String EMAIL, String SENHA) throws SQLException {
         // conexão
@@ -61,6 +59,24 @@ public class usuarioDAO {
         conn.close();
 
         return resultado;
+    }
+
+    public void UpdateSenhaUsuario(String SENHA, String EMAIL) throws SQLException {
+        Connection conn = DriverManager.getConnection(url, user, password);
+
+        String sql = "UPDATE pessoas SET SENHA = ? WHERE EMAIL = ?";
+
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, SENHA);
+        stmt.setString(2, EMAIL);
+
+        System.out.println(stmt);
+        stmt.executeUpdate();
+        int linhas = stmt.executeUpdate();
+        System.out.println("Linhas afetadas: " + linhas);
+
+        stmt.close();
+        conn.close();
     }
 
     public LoginDTO buscarPorEmail(String email) throws SQLException {
