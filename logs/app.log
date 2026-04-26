@@ -1,0 +1,10 @@
+2026-04-26T19:03:41.634-03:00  INFO 8168 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 21.0.10 with PID 8168 (C:\Users\mathe\OneDrive\Documents\GitHub\TCC-UMC\TCC\target\classes started by mathe in C:\Users\mathe\OneDrive\Documents\GitHub\TCC-UMC)
+2026-04-26T19:03:41.638-03:00  INFO 8168 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-04-26T19:03:42.863-03:00  INFO 8168 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-26T19:03:42.864-03:00  INFO 8168 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-26T19:03:43.609-03:00  INFO 8168 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-26T19:03:45.306-03:00  INFO 8168 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50dff608
+2026-04-26T19:03:45.307-03:00  INFO 8168 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-26T19:03:46.963-03:00  INFO 8168 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 5.734 seconds (process running for 6.226)
+2026-04-26T19:03:46.966-03:00  WARN 8168 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-26T19:03:46.967-03:00  WARN 8168 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'

@@ -1,59 +1,61 @@
-package DAO;
+package com.example.DAO;
 
 import java.sql.*;
 import com.example.dto.LoginDTO;
 
+import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+import javax.sql.DataSource;
+
+@Repository
 public class usuarioDAO {
 
-    String resultado;
+    // 🔴 REMOVIDO: variável global desnecessária
+    // String resultado;
 
-    
+    @Autowired
+    private DataSource dataSource;
 
-    public void InsertCadastroIntoBD(String NOME, String SOBRENOME, String EMAIL, String SENHA) throws SQLException {
-        // conexão
-        Connection conn = DriverManager.getConnection(url, user, password);
+    public void InsertCadastroIntoBD(String nome, String sobrenome, String email, String senha) throws SQLException {
 
-        // SQL
-        String sql = "INSERT INTO pessoas (NOME, SOBRENOME, EMAIL, SENHA) VALUES (?, ?, ?, ?)";
+        Connection conn = dataSource.getConnection();
 
-        // preparar
+        // 🔴 ALTERADO: nomes das colunas em minúsculo (PostgreSQL)
+        String sql = "INSERT INTO pessoas (nome, sobrenome, email, senha) VALUES (?, ?, ?, ?)";
+
         PreparedStatement stmt = conn.prepareStatement(sql);
 
-        stmt.setString(1, NOME);
-        stmt.setString(2, SOBRENOME);
-        stmt.setString(3, EMAIL);
-        stmt.setString(4, SENHA);
+        stmt.setString(1, nome);
+        stmt.setString(2, sobrenome);
+        stmt.setString(3, email);
+        stmt.setString(4, senha);
 
-        // executar
         stmt.executeUpdate();
 
         System.out.println("Inserido com sucesso!");
 
-        // fechar
         stmt.close();
         conn.close();
-        }
+    }
 
-    public String QueryLoginUsuario(String EMAIL) throws SQLException {
-        // conexão
-        Connection conn = DriverManager.getConnection(url, user, password);
+    public String QueryLoginUsuario(String email) throws SQLException {
 
-        // SQL
-        String sql = "Select SENHA FROM pessoas where EMAIL = ?";
+        Connection conn = dataSource.getConnection();
 
-        // preparar
+        // 🔴 ALTERADO: minúsculo
+        String sql = "SELECT senha FROM pessoas WHERE email = ?";
+
         PreparedStatement stmt = conn.prepareStatement(sql);
-        stmt.setString(1, EMAIL);
+        stmt.setString(1, email);
 
-        //Realizar Querys
         ResultSet rs = stmt.executeQuery();
 
+        String resultado = null; // 🔴 CORRIGIDO: variável local
+
         if (rs.next()) {
-            resultado = rs.getString("SENHA");
-            System.out.println("Senha: " + resultado);
+            resultado = rs.getString("senha");
         }
 
-        // fechar
         rs.close();
         stmt.close();
         conn.close();
@@ -61,18 +63,19 @@ public class usuarioDAO {
         return resultado;
     }
 
-    public void UpdateSenhaUsuario(String SENHA, String EMAIL) throws SQLException {
-        Connection conn = DriverManager.getConnection(url, user, password);
+    public void UpdateSenhaUsuario(String senha, String email) throws SQLException {
 
-        String sql = "UPDATE pessoas SET SENHA = ? WHERE EMAIL = ?";
+        Connection conn = dataSource.getConnection();
+
+        // 🔴 ALTERADO: minúsculo
+        String sql = "UPDATE pessoas SET senha = ? WHERE email = ?";
 
         PreparedStatement stmt = conn.prepareStatement(sql);
-        stmt.setString(1, SENHA);
-        stmt.setString(2, EMAIL);
+        stmt.setString(1, senha);
+        stmt.setString(2, email);
 
-        System.out.println(stmt);
-        stmt.executeUpdate();
         int linhas = stmt.executeUpdate();
+
         System.out.println("Linhas afetadas: " + linhas);
 
         stmt.close();
@@ -83,7 +86,7 @@ public class usuarioDAO {
 
         String sql = "SELECT * FROM pessoas WHERE email = ?";
 
-        Connection conn = DriverManager.getConnection(url, user, password);
+        Connection conn = dataSource.getConnection();
 
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, email);
@@ -93,16 +96,56 @@ public class usuarioDAO {
         if (rs.next()) {
             LoginDTO usuario = new LoginDTO();
 
+            // 🔴 ALTERADO: nomes corretos
             usuario.setEmail(rs.getString("email"));
             usuario.setSenha(rs.getString("senha"));
-
-            // se tiver mais campos:
-            // usuario.setNome(rs.getString("nome"));
 
             return usuario;
         }
 
+        rs.close();
+        stmt.close();
+        conn.close();
+
         return null;
     }
 
-}
+    // 🔥 NOVO: salvar código 2FA
+    public void salvarCodigo2FA(String email, String codigo, Timestamp expiracao) throws SQLException {
+
+        Connection conn = dataSource.getConnection();
+
+        String sql = "UPDATE pessoas SET codigo_2fa = ?, expiracao_2fa = ? WHERE email = ?";
+
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, codigo);
+        stmt.setTimestamp(2, expiracao);
+        stmt.setString(3, email);
+
+        stmt.executeUpdate();
+
+        stmt.close();
+        conn.close();
+    }
+
+    // 🔥 NOVO: validar código 2FA
+    public boolean validarCodigo2FA(String email, String codigo) throws SQLException {
+
+        Connection conn = dataSource.getConnection();
+
+        String sql = "SELECT * FROM pessoas WHERE email = ? AND codigo_2fa = ? AND expiracao_2fa > NOW()";
+
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, email);
+        stmt.setString(2, codigo);
+
+        ResultSet rs = stmt.executeQuery();
+
+        boolean valido = rs.next();
+
+        rs.close();
+        stmt.close();
+        conn.close();
+
+        return valido;
+    }
