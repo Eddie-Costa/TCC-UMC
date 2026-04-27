@@ -2,8 +2,12 @@
 <html>
 <head>
     <title>Verificação 2FA para resetar senha</title>
+    <link rel="stylesheet" th:href="@{/css/LoginPageStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/navStyle.css}">
 </head>
 <body>
+    <div th:replace="fragments/nav :: nav"></div>
+
     <h2>Digite o código enviado para seu email</h2>
 
     <form th:action="@{/ResetVerificar}" method="post">
