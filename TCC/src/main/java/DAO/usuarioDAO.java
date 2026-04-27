@@ -2,12 +2,17 @@ package DAO;
 
 import java.sql.*;
 import com.example.dto.LoginDTO;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class usuarioDAO {
 
     String resultado;
 
-    
+    private String url = "jdbc:mysql://localhost:3306/cadastro";
+    String user = System.getenv("DB_USUARIO");
+    String password = System.getenv("DB_SENHA");
 
     public void InsertCadastroIntoBD(String NOME, String SOBRENOME, String EMAIL, String SENHA) throws SQLException {
         // conexão
