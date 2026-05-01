@@ -132,6 +132,15 @@ Desenvolver um sistema inteligente que automatize o planejamento de viagens, aju
     <img align="center" alt="Swagger" src="https://img.shields.io/badge/Swagger_OpenAPI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
 </div>
  
+--- 
+
+## 📋 Progresso do Projeto
+
+- [x] Criar estrutura inicial
+- [x] Configurar banco de dados
+- [ ] Implementar API
+- [ ] Criar interface frontend
+
 ---
  
 ## ⚙️ Como Executar o Projeto
