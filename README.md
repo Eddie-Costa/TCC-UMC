@@ -136,10 +136,36 @@ Desenvolver um sistema inteligente que automatize o planejamento de viagens, aju
 
 ## 📋 Progresso do Projeto
 
-- [x] Criar estrutura inicial
-- [x] Configurar banco de dados
-- [ ] Implementar API
-- [ ] Criar interface frontend
+- [x] 1. Uso de hash criptográfico seguro para senhas (Argon2, bcrypt ou PBKDF2)
+- [x] 2. Parâmetros de custo do hash configurados e justificados
+- [x] 3. Uso de salt criptográfico único por usuário
+- [x] 4. Armazenamento correto do hash + salt
+- [x] 5. Autenticação de dois fatores (2FA) implementada
+- [x] 6. Validação do 2FA após autenticação primária
+- [x] 7. Fluxo de autenticação documentado
+- [x] 8. Evidências funcionais (prints, logs ou testes)
+- [x] 9. Sessões com tempo de expiração
+- [x] 10. Invalidação de sessão no logout
+- [x] 11. Proteção contra força bruta (rate limit, bloqueio, atraso)
+- [x] 12. Justificativas técnicas documentadas
+- [x] 13. Funcionalidade de recuperação de senha implementada
+- [x] 14. Token criptograficamente seguro
+- [x] 15. Token com tempo de expiração
+- [x] 16. Token invalidado após uso
+- [x] 17. Falha correta para token expirado
+- [x] 18. Registro de solicitação de recuperação em log
+- [x] 19. Registro de sucesso/falha do processo
+- [x] 20. Comunicação protegida por TLS/HTTPS
+- [x] 21. Bloqueio de conexões não seguras
+- [x] 22. Evidência de tráfego cifrado
+- [x] 23. Dados sensíveis criptografados em repouso
+- [x] 24. Uso de algoritmo criptográfico adequado (ex.:AES)
+- [x] 25. Chaves criptográficas protegidas
+- [ ] 26. Estratégia de criptografia documentada
+- [ ] 27. Justificativa técnica das escolhas 
+- [ ] 28. xxxxx
+- [ ] 29. xxxxx
+- [ ] 30. xxxxx
 
 ---
  
