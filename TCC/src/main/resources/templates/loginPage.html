@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" th:href="@{/css/LoginPageStyle.css}">
-    <link rel="stylesheet" th:href="@{/css/navStyle.css}">
+    <link rel="stylesheet" href="css/LoginPageStyle.css">
+    <link rel="stylesheet" href="../css/navStyle.css">
     <title>Login</title>
 </head>
 <body>
-    <div th:replace="fragments/nav :: nav"></div>
+<div th:replace="fragments/nav :: nav"></div>
 
-    <h1>LOGIN</h1>
-    <form action="/login" th:object="${usuario}" method="post" class="form-login">
+<h1 class="title">LOGIN</h1>
+<form action="/login" th:object="${usuario}" method="post" class="form-login">
 
 
-        <label>E-mail</label>
-        <input name="email" th:value="${email}" type="email" required >
+    <label class="label_info">E-mail</label>
+    <input name="email" th:value="${email}" type="email" required class="textbox">
 
-        <label>Senha:</label>
-        <input name="senha" th:value="${senha}" type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial">
+    <label class="label_info">Senha:</label>
+    <input name="senha" th:value="${senha}" type="password" class="textbox" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial">
 
-        <button type="submit">Entrar</button>
-        <p name="mensagemDeErro" th:text="${mensagemDeErro}"></p>
-        <a href="/Subscription">Ainda não está cadastrado em nossa plataforma? clique aqui para Registrar</a>
-        <a href="/ResetPassword_Verification">Esqueceu a senha? clique aqui redefinir</a>
-    </form>
+    <button type="submit" class="Sendbutton">Entrar</button>
+    <p name="mensagemDeErro" th:text="${mensagemDeErro}"></p>
+
+    <div class="linksuteis">
+
+        <a href="/Subscription" class="link_pull">Ainda não está cadastrado em nossa plataforma? clique aqui para Registrar</a>
+        <a href="/ResetPassword_Verification" class="link_pull">Esqueceu a senha? clique aqui redefinir</a>
+    </div>
+
+</form>
 
 </body>
 </html>

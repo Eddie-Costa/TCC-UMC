@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" th:href="@{/css/subscriptionStyle.css}">
-    <link rel="stylesheet" th:href="@{/css/navStyle.css}">
+    <link rel="stylesheet" href="css/subscriptionStyle.css">
+    <link rel="stylesheet" href="../css/navStyle.css">
     <title>Registrar</title>
 </head>
 <body>
-    <div th:replace="fragments/nav :: nav"></div>
+<div th:replace="fragments/nav :: nav"></div>
 
-    <h1>Registrar</h1>
-    <form action="/Subscription" th:object="${usuario}" method="post" class="form-login">
-        <label>Nome</label>
-        <input name="nome" th:value="${nome}" type="text" required >
+<h1 class="title">Registrar</h1>
+<form action="/Subscription" th:object="${usuario}" method="post" class="form-login">
+    <label class="label_info">Nome</label>
+    <input name="nome" th:value="${nome}" type="text" required class="textbox">
 
-        <label>Sobrenome</label>
-        <input name="sobrenome" th:value="${sobrenome}" type="text" required >
+    <label class="label_info">Sobrenome</label>
+    <input name="sobrenome" th:value="${sobrenome}" type="text" required class="textbox">
 
-        <label>E-mail</label>
-        <input name="email" th:value="${email}" type="email" required >
+    <label class="label_info">E-mail</label>
+    <input name="email" th:value="${email}" type="email" required class="textbox">
 
-        <label>Senha:</label>
-        <input name="senha" th:value="${senha}" type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial">
+    <label class="label_info">Senha:</label>
+    <input name="senha" th:value="${senha}" type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial" class="textbox">
 
-        <button type="submit">Entrar</button>
-        <a href="/login">Ja tem cadastro em nossa plataforma? clique aqui para Logar</a>
-    </form>
+    <button type="submit" class="Sendbutton">Entrar</button>
+    <p name="mensagemDeErro" th:text="${mensagemDeErro}"></p>
+
+    <div class="linksuteis" >
+        <a href="/login" class="link_pull">Ja tem cadastro em nossa plataforma? clique aqui para Logar</a>
+    </div>
+</form>
 </body>
 </html>
