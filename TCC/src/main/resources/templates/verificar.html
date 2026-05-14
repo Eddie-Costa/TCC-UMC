@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Verificação 2FA</title>
-    <link rel="stylesheet" th:href="@{/css/verificarStyle.css}">
-    <link rel="stylesheet" th:href="@{/css/navStyle.css}">
-</head>
-<body>
-    <div th:replace="fragments/nav :: nav"></div>
+    <head>
+        <title>Verificação 2FA</title>
+        <link rel="stylesheet" th:href="@{/css/verificarStyle.css}">
+        <link rel="stylesheet" th:href="@{/css/navStyle.css}">
+    </head>
 
-    <h2>Digite o código enviado para seu email</h2>
+    <body>
+        <div th:replace="fragments/nav :: nav"></div>
 
-    <form th:action="@{/verificar}" method="post">
-        <input type="text" name="codigo" placeholder="Digite o código" required>
-        <button type="submit">Verificar</button>
-    </form>
+        <h2 class="title">Verificação duas etapas</h2>
 
-    <p th:if="${erro}" th:text="${erro}" style="color:red;"></p>
+        <form th:action="@{/verificar}" method="post" class="form-verificacao">
 
-</body>
+            <label class="label_info">Código de verificação</label>
+
+            <input type="text" name="codigo" placeholder="Digite o código envia ao seu Email" required class="textbox">
+
+            <button type="submit" class="Sendbutton">Verificar</button>
+
+        </form>
+
+        <p th:if="${erro}" th:text="${erro}" class="mensagemErro"></p>
+
+    </body>
 </html>

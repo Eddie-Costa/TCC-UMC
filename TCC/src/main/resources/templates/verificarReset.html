@@ -2,20 +2,28 @@
 <html>
 <head>
     <title>Verificação 2FA para resetar senha</title>
-    <link rel="stylesheet" th:href="@{/css/LoginPageStyle.css}">
+
+    <link rel="stylesheet" th:href="@{/css/verificarResetStyle.css}">
     <link rel="stylesheet" th:href="@{/css/navStyle.css}">
 </head>
+
 <body>
-    <div th:replace="fragments/nav :: nav"></div>
 
-    <h2>Digite o código enviado para seu email</h2>
+<div th:replace="fragments/nav :: nav"></div>
 
-    <form th:action="@{/ResetVerificar}" method="post">
-        <input type="text" name="codigo" placeholder="Digite o código" required>
-        <button type="submit">Verificar</button>
-    </form>
+<h2 class="title">Verificação duas etapas</h2>
 
-    <p th:if="${erro}" th:text="${erro}" style="color:red;"></p>
+<form th:action="@{/ResetVerificar}" method="post" class="form-verificacao">
+
+    <label class="label_info">Código de verificação</label>
+
+    <input type="text" name="codigo" placeholder="Digite o código envia ao seu Email" required class="textbox">
+
+    <button type="submit" class="Sendbutton">Verificar</button>
+
+</form>
+
+<p th:if="${erro}" th:text="${erro}" class="mensagemErro"></p>
 
 </body>
 </html>
