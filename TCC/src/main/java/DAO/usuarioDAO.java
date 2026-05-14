@@ -10,7 +10,7 @@ public class usuarioDAO {
 
     String resultado;
 
-    private String url = "jdbc:mysql://localhost:3306/cadastro";
+    private String url = System.getenv("DB_URL");
     String user = System.getenv("DB_USUARIO");
     String password = System.getenv("DB_SENHA");
 
