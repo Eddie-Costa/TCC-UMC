@@ -248,3 +248,11 @@ Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC).
 * Riquelmy Christofer
 
 ---
+
+# ⭐ Considerações Finais
+
+Este projeto representa a aplicação prática dos conhecimentos adquiridos durante a graduação em Engenharia de Software.
+
+Além do desenvolvimento técnico, o sistema demonstra conceitos modernos de segurança, autenticação e organização de aplicações Java utilizando Spring Boot.
+
+O projeto continuará evoluindo conforme novas funcionalidades forem implementadas e novos conhecimentos forem adquiridos ao longo da jornada profissional.
