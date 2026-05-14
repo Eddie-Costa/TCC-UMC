@@ -222,3 +222,17 @@ O projeto utiliza integração com Swagger/OpenAPI.
 ```bash
 http://localhost:8080/swagger-ui.html
 ```
+
+---
+
+# 📜 Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+Consulte o arquivo:
+
+```bash
+LICENSE
+```
+
+---
