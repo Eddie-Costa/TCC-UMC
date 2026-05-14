@@ -200,6 +200,21 @@ O projeto implementa diversas práticas voltadas à segurança:
 
 ---
 
+
+# 🧪 Estrutura das Telas
+
+O projeto já possui diversas interfaces implementadas:
+
+* Página inicial
+* Tela de login
+* Cadastro de usuários
+* Recuperação de senha
+* Verificação de código
+* Tela de autenticação 2FA
+* Tela de sucesso
+
+---
+
 # 📖 Documentação da API
 
 O projeto utiliza integração com Swagger/OpenAPI.
