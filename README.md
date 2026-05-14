@@ -62,3 +62,52 @@ Este projeto foi desenvolvido com os seguintes objetivos:
 # 🏗️ Arquitetura do Projeto
 
 O sistema segue uma estrutura baseada no padrão MVC (Model-View-Controller), organizando responsabilidades entre controllers, serviços, DTOs, páginas HTML e acesso ao banco de dados.
+
+---
+
+# 📂 Estrutura do Projeto
+
+```bash
+src
+ └── main
+      ├── java
+      │    ├── com.example
+      │    │     ├── controller
+      │    │     │      ├── IndexController.java
+      │    │     │      ├── LoginPageController.java
+      │    │     │      ├── LogoutController.java
+      │    │     │      ├── ResetPaswordController.java
+      │    │     │      ├── SubscriptionPageController.java
+      │    │     │      └── VerificarController.java
+      │    │     │
+      │    │     ├── dto
+      │    │     │      ├── LoginDTO.java
+      │    │     │      └── SubscriptionDTO.java
+      │    │     │
+      │    │     ├── service
+      │    │     │      ├── emailService.java
+      │    │     │      ├── LoginAttemptService.java
+      │    │     │      └── TwoFactorService.java
+      │    │     │
+      │    │     └── TCC_Application.java
+      │    │
+      │    └── DAO
+      │           └── usuarioDAO.java
+      │
+      └── resources
+           ├── static
+           │     ├── css
+           │     ├── js
+           │     └── images
+           │
+           ├── templates
+           │     ├── index.html
+           │     ├── loginPage.html
+           │     ├── 2fa.html
+           │     ├── subscriptionPage.html
+           │     ├── ResetPassword.html
+           │     └── verificar.html
+           │
+           ├── application.properties
+           └── keystore.p12
+```
