@@ -160,3 +160,27 @@ Antes de executar o projeto, é necessário possuir:
 * MySQL Server
 * Git
 * IDE de sua preferência
+
+---
+
+# ▶️ Como Executar o Projeto
+
+## 1. Clone o repositório
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+## 2. Acesse a pasta do projeto
+
+```bash
+cd TCC
+```
+
+## 3. Configure o banco de dados
+
+```properties
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+```
