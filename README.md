@@ -56,3 +56,9 @@ Este projeto foi desenvolvido com os seguintes objetivos:
 | HTML5                  | Estrutura das páginas                 |
 | CSS3                   | Estilização da interface              |
 | JavaScript             | Recursos interativos                  |
+
+---
+
+# 🏗️ Arquitetura do Projeto
+
+O sistema segue uma estrutura baseada no padrão MVC (Model-View-Controller), organizando responsabilidades entre controllers, serviços, DTOs, páginas HTML e acesso ao banco de dados.
