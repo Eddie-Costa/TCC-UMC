@@ -1,143 +1,19 @@
-# 🌍✈️ Travel Buddy — Sistema Inteligente de Viagens
-<p align="center">
-<img src="https://img.icons8.com/color/512/around-the-globe.png" width="120"/>
-</p>
- 
-<p align="center">
+# ✈️ TravelBuddy
 
-  Plataforma web para planejamento inteligente de viagens 🌎
-</p>
-
----
-
- ## 📌 Status do Projeto
-🚧 Em desenvolvimento
+![Java](https://img.shields.io/badge/Java-21-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen)
+![Spring MVC](https://img.shields.io/badge/Spring-MVC-success)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template-darkgreen)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![Maven](https://img.shields.io/badge/Maven-Build-red)
+![Security](https://img.shields.io/badge/Security-2FA-important)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
- 
-## 📖 Sobre o Projeto
 
-O **Travel Buddy** é uma aplicação web desenvolvida para facilitar o planejamento de viagens de forma prática e personalizada.
- 
-A plataforma auxilia o usuário na escolha de destinos, melhor época para viajar, estimativa de custos e sugestões de roteiros, centralizando tudo em um único sistema intuitivo.
- 
----
- 
-## 🎯 Objetivo
+# 📌 Sobre o Projeto
 
-Desenvolver um sistema inteligente que automatize o planejamento de viagens, ajudando o usuário a tomar decisões com base em:
- 
-- 🌦️ Clima  
+O **TravelBuddy** é uma aplicação web desenvolvida utilizando **Java com Spring Boot**, criada como projeto acadêmico de **Trabalho de Conclusão de Curso (TCC)**.
 
-- 💰 Custos médios  
-
-- 📅 Sazonalidade  
-
-- 📍 Preferências pessoais  
- 
----
- 
-## 🚀 Funcionalidades
-
-- 🔎 Sugestão de destinos personalizados  
-
-- 📅 Melhor período para viajar  
-
-- 💸 Estimativa de custos (passagens e hospedagem)  
-
-- 🌤️ Informações climáticas  
-
-- 🗺️ Sugestões de pontos turísticos  
-
-- 🧭 Planejamento básico de roteiros  
- 
----
- 
-## 🛠️ Tecnologias Utilizadas
- 
-### 🔧 Backend
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="Java" src="https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-    <img align="center" alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
-    <img align="center" alt="Spring MVC" src="https://img.shields.io/badge/Spring_MVC-4CAF50?style=for-the-badge&logo=spring&logoColor=white" />
-    <img align="center" alt="Spring Data JPA" src="https://img.shields.io/badge/Spring_Data_JPA-2E7D32?style=for-the-badge&logo=spring&logoColor=white" />
-    <img align="center" alt="Bean Validation" src="https://img.shields.io/badge/Bean_Validation-1565C0?style=for-the-badge&logo=java&logoColor=white" />
-</div>
-   
- 
-### 🎨 Frontend
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="Thymeleaf" src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white" />
-    <img align="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=white" />
-    <img align="center" alt="CSS3" src="https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white" />
-</div>
- 
- 
-### 🗄️ Banco de Dados
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
-    <img align="center" alt="H2 Database" src="https://img.shields.io/badge/H2_Database-1F4E79?style=for-the-badge&logo=h2&logoColor=white" />
-</div> 
- 
-### 📚 Documentação
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="Swagger" src="https://img.shields.io/badge/Swagger_OpenAPI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
-</div>
- 
---- 
-
-## 📋 Progresso do Projeto
-
-- [x] 1. Uso de hash criptográfico seguro para senhas (Argon2, bcrypt ou PBKDF2)
-- [x] 2. Parâmetros de custo do hash configurados e justificados
-- [x] 3. Uso de salt criptográfico único por usuário
-- [x] 4. Armazenamento correto do hash + salt
-- [x] 5. Autenticação de dois fatores (2FA) implementada
-- [x] 6. Validação do 2FA após autenticação primária
-- [x] 7. Fluxo de autenticação documentado
-- [x] 8. Evidências funcionais (prints, logs ou testes)
-- [x] 9. Sessões com tempo de expiração
-- [x] 10. Invalidação de sessão no logout
-- [x] 11. Proteção contra força bruta (rate limit, bloqueio, atraso)
-- [x] 12. Justificativas técnicas documentadas
-- [x] 13. Funcionalidade de recuperação de senha implementada
-- [x] 14. Token criptograficamente seguro
-- [x] 15. Token com tempo de expiração
-- [x] 16. Token invalidado após uso
-- [x] 17. Falha correta para token expirado
-- [x] 18. Registro de solicitação de recuperação em log
-- [x] 19. Registro de sucesso/falha do processo
-- [x] 20. Comunicação protegida por TLS/HTTPS
-- [x] 21. Bloqueio de conexões não seguras
-- [x] 22. Evidência de tráfego cifrado
-- [x] 23. Dados sensíveis criptografados em repouso
-- [x] 24. Uso de algoritmo criptográfico adequado (ex.:AES)
-- [x] 25. Chaves criptográficas protegidas
-- [ ] 26. Estratégia de criptografia documentada
-- [ ] 27. Justificativa técnica das escolhas 
-- [ ] 28. xxxxx
-- [ ] 29. xxxxx
-- [ ] 30. xxxxx
-
----
- 
-## ⚙️ Como Executar o Projeto
- 
-```bash
-
-# Clone o repositório
-
-git clone https://github.com/Eddie-Costa/TCC-UMC.git
- 
-# Acesse a pasta do projeto
-
-cd TCC
- 
-# Execute o projeto
-
-./mvnw spring-boot:run
- 
+O projeto foi desenvolvido visando aprendizado prático, aplicação de boas práticas de desenvolvimento web.
