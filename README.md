@@ -184,3 +184,16 @@ spring.datasource.url=
 spring.datasource.username=
 spring.datasource.password=
 ```
+
+---
+
+# 🔒 Segurança da Aplicação
+
+O projeto implementa diversas práticas voltadas à segurança:
+
+* Criptografia de senhas
+* Autenticação em dois fatores
+* Controle de tentativas de login
+* Recuperação segura de senha
+* Uso de keystore SSL
+* Verificação por e-mail
