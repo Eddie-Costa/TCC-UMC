@@ -1,143 +1,342 @@
-# 🌍✈️ Travel Buddy — Sistema Inteligente de Viagens
-<p align="center">
-<img src="https://img.icons8.com/color/512/around-the-globe.png" width="120"/>
-</p>
- 
-<p align="center">
+# ✈️ TravelBuddy
 
-  Plataforma web para planejamento inteligente de viagens 🌎
-</p>
-
----
-
- ## 📌 Status do Projeto
-🚧 Em desenvolvimento
+![Java](https://img.shields.io/badge/Java-21-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen)
+![Spring MVC](https://img.shields.io/badge/Spring-MVC-success)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template-darkgreen)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![Maven](https://img.shields.io/badge/Maven-Build-red)
+![Security](https://img.shields.io/badge/Security-2FA-important)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
- 
-## 📖 Sobre o Projeto
 
-O **Travel Buddy** é uma aplicação web desenvolvida para facilitar o planejamento de viagens de forma prática e personalizada.
- 
+# 📌 Sobre o Projeto
+
+O **TravelBuddy** é uma aplicação web desenvolvida para facilitar o planejamento de viagens de forma prática e personalizada utilizando **Java com Spring Boot**.
+
 A plataforma auxilia o usuário na escolha de destinos, melhor época para viajar, estimativa de custos e sugestões de roteiros, centralizando tudo em um único sistema intuitivo.
- 
----
- 
-## 🎯 Objetivo
 
-Desenvolver um sistema inteligente que automatize o planejamento de viagens, ajudando o usuário a tomar decisões com base em:
- 
-- 🌦️ Clima  
-
-- 💰 Custos médios  
-
-- 📅 Sazonalidade  
-
-- 📍 Preferências pessoais  
- 
----
- 
-## 🚀 Funcionalidades
-
-- 🔎 Sugestão de destinos personalizados  
-
-- 📅 Melhor período para viajar  
-
-- 💸 Estimativa de custos (passagens e hospedagem)  
-
-- 🌤️ Informações climáticas  
-
-- 🗺️ Sugestões de pontos turísticos  
-
-- 🧭 Planejamento básico de roteiros  
- 
----
- 
-## 🛠️ Tecnologias Utilizadas
- 
-### 🔧 Backend
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="Java" src="https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-    <img align="center" alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
-    <img align="center" alt="Spring MVC" src="https://img.shields.io/badge/Spring_MVC-4CAF50?style=for-the-badge&logo=spring&logoColor=white" />
-    <img align="center" alt="Spring Data JPA" src="https://img.shields.io/badge/Spring_Data_JPA-2E7D32?style=for-the-badge&logo=spring&logoColor=white" />
-    <img align="center" alt="Bean Validation" src="https://img.shields.io/badge/Bean_Validation-1565C0?style=for-the-badge&logo=java&logoColor=white" />
-</div>
-   
- 
-### 🎨 Frontend
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="Thymeleaf" src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white" />
-    <img align="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=white" />
-    <img align="center" alt="CSS3" src="https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white" />
-</div>
- 
- 
-### 🗄️ Banco de Dados
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
-    <img align="center" alt="H2 Database" src="https://img.shields.io/badge/H2_Database-1F4E79?style=for-the-badge&logo=h2&logoColor=white" />
-</div> 
- 
-### 📚 Documentação
-
-<div style="display: inline_block"><br/>
-    <img align="center" alt="Swagger" src="https://img.shields.io/badge/Swagger_OpenAPI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
-</div>
- 
---- 
-
-## 📋 Progresso do Projeto
-
-- [x] 1. Uso de hash criptográfico seguro para senhas (Argon2, bcrypt ou PBKDF2)
-- [x] 2. Parâmetros de custo do hash configurados e justificados
-- [x] 3. Uso de salt criptográfico único por usuário
-- [x] 4. Armazenamento correto do hash + salt
-- [x] 5. Autenticação de dois fatores (2FA) implementada
-- [x] 6. Validação do 2FA após autenticação primária
-- [x] 7. Fluxo de autenticação documentado
-- [x] 8. Evidências funcionais (prints, logs ou testes)
-- [x] 9. Sessões com tempo de expiração
-- [x] 10. Invalidação de sessão no logout
-- [x] 11. Proteção contra força bruta (rate limit, bloqueio, atraso)
-- [x] 12. Justificativas técnicas documentadas
-- [x] 13. Funcionalidade de recuperação de senha implementada
-- [x] 14. Token criptograficamente seguro
-- [x] 15. Token com tempo de expiração
-- [x] 16. Token invalidado após uso
-- [x] 17. Falha correta para token expirado
-- [x] 18. Registro de solicitação de recuperação em log
-- [x] 19. Registro de sucesso/falha do processo
-- [x] 20. Comunicação protegida por TLS/HTTPS
-- [x] 21. Bloqueio de conexões não seguras
-- [x] 22. Evidência de tráfego cifrado
-- [x] 23. Dados sensíveis criptografados em repouso
-- [x] 24. Uso de algoritmo criptográfico adequado (ex.:AES)
-- [x] 25. Chaves criptográficas protegidas
-- [ ] 26. Estratégia de criptografia documentada
-- [ ] 27. Justificativa técnica das escolhas 
-- [ ] 28. xxxxx
-- [ ] 29. xxxxx
-- [ ] 30. xxxxx
+O projeto foi desenvolvido visando aprendizado prático, aplicação de boas práticas de desenvolvimento web, criada como projeto acadêmico de **Trabalho de Conclusão de Curso (TCC)**.
 
 ---
- 
-## ⚙️ Como Executar o Projeto
- 
+
+# 🎯 Objetivos do Projeto
+
+Este projeto foi desenvolvido com os seguintes objetivos:
+
+* Aplicar conceitos de desenvolvimento backend com Java
+* Utilizar o ecossistema Spring Boot em um projeto real
+* Implementar autenticação segura de usuários
+* Desenvolver sistema de recuperação de senha
+* Aplicar autenticação em duas etapas (2FA)
+* Trabalhar com integração de e-mails
+* Implementar persistência de dados utilizando JPA
+* Desenvolver páginas dinâmicas com Thymeleaf
+* Aplicar conceitos de segurança e criptografia
+* Criar uma base sólida para futuras expansões do sistema
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+| Tecnologia             | Descrição                             |
+| ---------------------- | ------------------------------------- |
+| Java 21                | Linguagem principal da aplicação      |
+| Spring Boot 4.0.5      | Framework principal do projeto        |
+| Spring MVC             | Estrutura web e controle de rotas     |
+| Thymeleaf              | Renderização de páginas HTML          |
+| Spring Data JPA        | Persistência de dados                 |
+| MySQL                  | Banco de dados principal              |
+| H2 Database            | Banco de dados em memória para testes |
+| Lombok                 | Redução de código boilerplate         |
+| Maven                  | Gerenciamento de dependências         |
+| Spring Mail            | Envio de e-mails automáticos          |
+| Spring Security Crypto | Criptografia de senhas                |
+| OpenAPI / Swagger      | Documentação de APIs                  |
+| HTML5                  | Estrutura das páginas                 |
+| CSS3                   | Estilização da interface              |
+| JavaScript             | Recursos interativos                  |
+
+---
+
+# 🏗️ Arquitetura do Projeto
+
+O sistema segue uma estrutura baseada no padrão MVC (Model-View-Controller), organizando responsabilidades entre controllers, serviços, DTOs, páginas HTML e acesso ao banco de dados.
+
+---
+
+# 📂 Estrutura do Projeto
+
 ```bash
+src
+ └── main
+      ├── java
+      │    ├── com.example
+      │    │     ├── controller
+      │    │     │      ├── IndexController.java
+      │    │     │      ├── LoginPageController.java
+      │    │     │      ├── LogoutController.java
+      │    │     │      ├── ResetPaswordController.java
+      │    │     │      ├── SubscriptionPageController.java
+      │    │     │      └── VerificarController.java
+      │    │     │
+      │    │     ├── dto
+      │    │     │      ├── LoginDTO.java
+      │    │     │      └── SubscriptionDTO.java
+      │    │     │
+      │    │     ├── service
+      │    │     │      ├── emailService.java
+      │    │     │      ├── LoginAttemptService.java
+      │    │     │      └── TwoFactorService.java
+      │    │     │
+      │    │     └── TCC_Application.java
+      │    │
+      │    └── DAO
+      │           └── usuarioDAO.java
+      │
+      └── resources
+           ├── static
+           │     ├── css
+           │     ├── js
+           │     └── images
+           │
+           ├── templates
+           │     ├── index.html
+           │     ├── loginPage.html
+           │     ├── 2fa.html
+           │     ├── subscriptionPage.html
+           │     ├── ResetPassword.html
+           │     └── verificar.html
+           │
+           ├── application.properties
+           └── keystore.p12
+```
 
-# Clone o repositório
+---
 
-git clone https://github.com/Eddie-Costa/TCC-UMC.git
- 
-# Acesse a pasta do projeto
+# 📋 Progresso do Projeto
 
+* [x] 1. Uso de hash criptográfico seguro para senhas (Argon2, bcrypt ou PBKDF2)
+* [x] 2. Parâmetros de custo do hash configurados e justificados
+* [x] 3. Uso de salt criptográfico único por usuário
+* [x] 4. Armazenamento correto do hash + salt
+* [x] 5. Autenticação de dois fatores (2FA) implementada
+* [x] 6. Validação do 2FA após autenticação primária
+* [x] 7. Fluxo de autenticação documentado
+* [x] 8. Evidências funcionais (prints, logs ou testes)
+* [x] 9. Sessões com tempo de expiração
+* [x] 10. Invalidação de sessão no logout
+* [x] 11. Proteção contra força bruta (rate limit, bloqueio, atraso)
+* [x] 12. Justificativas técnicas documentadas
+* [x] 13. Funcionalidade de recuperação de senha implementada
+* [x] 14. Token criptograficamente seguro
+* [x] 15. Token com tempo de expiração
+* [x] 16. Token invalidado após uso
+* [x] 17. Falha correta para token expirado
+* [x] 18. Registro de solicitação de recuperação em log
+* [x] 19. Registro de sucesso/falha do processo
+* [x] 20. Comunicação protegida por TLS/HTTPS
+* [x] 21. Bloqueio de conexões não seguras
+* [x] 22. Evidência de tráfego cifrado
+* [x] 23. Dados sensíveis criptografados em repouso
+* [x] 24. Uso de algoritmo criptográfico adequado (ex.:AES)
+* [x] 25. Chaves criptográficas protegidas
+* [ ] 26. Estratégia de criptografia documentada
+* [ ] 27. Justificativa técnica das escolhas
+* [ ] 28. xxxxx
+* [ ] 29. xxxxx
+* [ ] 30. xxxxx
+
+---
+
+# ⚙️ Configuração do Ambiente
+
+## Pré-requisitos
+
+Antes de executar o projeto, é necessário possuir:
+
+* Java JDK 21+
+* Maven 3.9+
+* MySQL Server
+* Git
+* IDE de sua preferência
+
+### IDEs recomendadas
+
+* IntelliJ IDEA
+* Visual Studio Code
+* Eclipse
+
+---
+
+# ▶️ Como Executar o Projeto
+
+## 1. Clone o repositório
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+---
+
+## 2. Acesse a pasta do projeto
+
+```bash
 cd TCC
- 
-# Execute o projeto
+```
 
+---
+
+## 3. Configure o banco de dados
+
+Edite o arquivo:
+
+```bash
+src/main/resources/application.properties
+```
+
+Configure:
+
+```properties
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+```
+
+---
+
+## 4. Execute o projeto
+
+### Windows
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+### Linux / Mac
+
+```bash
 ./mvnw spring-boot:run
- 
+```
+
+---
+
+# 🌐 Acessando a Aplicação
+
+Após iniciar o sistema, acesse:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+# 📧 Configuração de E-mail
+
+O sistema utiliza envio de e-mails para autenticação e recuperação de senha.
+
+No arquivo `application.properties`, configure:
+
+```properties
+spring.mail.username=
+spring.mail.password=
+```
+
+---
+
+# 🔒 Segurança da Aplicação
+
+O projeto implementa diversas práticas voltadas à segurança:
+
+* Criptografia de senhas
+* Autenticação em dois fatores
+* Controle de tentativas de login
+* Validação de dados
+* Recuperação segura de senha
+* Uso de keystore SSL
+* Verificação por e-mail
+
+---
+
+# 📚 Conceitos Aplicados
+
+Durante o desenvolvimento deste projeto foram aplicados conceitos importantes da área de desenvolvimento de software:
+
+* Arquitetura MVC
+* Programação Orientada a Objetos
+* Desenvolvimento Web com Spring Boot
+* Persistência de dados com JPA
+* Segurança de aplicações web
+* Integração com banco de dados
+* Renderização server-side
+* Envio de e-mails automáticos
+* Organização de projetos escaláveis
+* Estruturação de sistemas corporativos
+
+---
+
+# 🧪 Estrutura das Telas
+
+O projeto já possui diversas interfaces implementadas:
+
+* Página inicial
+* Tela de login
+* Cadastro de usuários
+* Recuperação de senha
+* Verificação de código
+* Tela de autenticação 2FA
+* Tela de sucesso
+
+---
+
+# 📖 Documentação da API
+
+O projeto utiliza integração com Swagger/OpenAPI.
+
+Após iniciar a aplicação, a documentação poderá ser acessada em:
+
+```bash
+http://localhost:8080/swagger-ui.html
+```
+
+ou
+
+```bash
+http://localhost:8080/swagger-ui/index.html
+```
+
+---
+
+# 📜 Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+Consulte o arquivo:
+
+```bash
+LICENSE
+```
+
+---
+
+# 👨‍💻 Equipe de Desenvolvimento
+
+Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC).
+
+### Desenvolvedores
+
+* Matheus Santhiago Fortonato
+* Eddie Alencar Costa
+* Riquelmy Christofer
+
+---
+
+# ⭐ Considerações Finais
+
+Este projeto representa a aplicação prática dos conhecimentos adquiridos durante a graduação em Engenharia de Software.
+
+Além do desenvolvimento técnico, o sistema demonstra conceitos modernos de segurança, autenticação e organização de aplicações Java utilizando Spring Boot.
+
+O projeto continuará evoluindo conforme novas funcionalidades forem implementadas e novos conhecimentos forem adquiridos ao longo da jornada profissional.
