@@ -146,3 +146,17 @@ src
 * [ ] 28. xxxxx
 * [ ] 29. xxxxx
 * [ ] 30. xxxxx
+
+---
+
+# ⚙️ Configuração do Ambiente
+
+## Pré-requisitos
+
+Antes de executar o projeto, é necessário possuir:
+
+* Java JDK 21+
+* Maven 3.9+
+* MySQL Server
+* Git
+* IDE de sua preferência
