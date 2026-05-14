@@ -14,11 +14,11 @@
 
 # 📌 Sobre o Projeto
 
-O **TravelBuddy** é uma aplicação web desenvolvida utilizando **Java com Spring Boot**, criada como projeto acadêmico de **Trabalho de Conclusão de Curso (TCC)**.
+O **TravelBuddy** é uma aplicação web desenvolvida para facilitar o planejamento de viagens de forma prática e personalizada utilizando **Java com Spring Boot**.
 
+A plataforma auxilia o usuário na escolha de destinos, melhor época para viajar, estimativa de custos e sugestões de roteiros, centralizando tudo em um único sistema intuitivo.
 
-
-O projeto foi desenvolvido visando aprendizado prático, aplicação de boas práticas de desenvolvimento web.
+O projeto foi desenvolvido visando aprendizado prático, aplicação de boas práticas de desenvolvimento web, criada como projeto acadêmico de **Trabalho de Conclusão de Curso (TCC)**.
 
 ---
 
