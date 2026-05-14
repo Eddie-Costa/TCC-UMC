@@ -17,3 +17,20 @@
 O **TravelBuddy** é uma aplicação web desenvolvida utilizando **Java com Spring Boot**, criada como projeto acadêmico de **Trabalho de Conclusão de Curso (TCC)**.
 
 O projeto foi desenvolvido visando aprendizado prático, aplicação de boas práticas de desenvolvimento web.
+
+---
+
+# 🎯 Objetivos do Projeto
+
+Este projeto foi desenvolvido com os seguintes objetivos:
+
+* Aplicar conceitos de desenvolvimento backend com Java
+* Utilizar o ecossistema Spring Boot em um projeto real
+* Implementar autenticação segura de usuários
+* Desenvolver sistema de recuperação de senha
+* Aplicar autenticação em duas etapas (2FA)
+* Trabalhar com integração de e-mails
+* Implementar persistência de dados utilizando JPA
+* Desenvolver páginas dinâmicas com Thymeleaf
+* Aplicar conceitos de segurança e criptografia
+* Criar uma base sólida para futuras expansões do sistema
