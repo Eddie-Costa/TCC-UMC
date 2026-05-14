@@ -16,6 +16,8 @@
 
 O **TravelBuddy** é uma aplicação web desenvolvida utilizando **Java com Spring Boot**, criada como projeto acadêmico de **Trabalho de Conclusão de Curso (TCC)**.
 
+
+
 O projeto foi desenvolvido visando aprendizado prático, aplicação de boas práticas de desenvolvimento web.
 
 ---
@@ -161,6 +163,12 @@ Antes de executar o projeto, é necessário possuir:
 * Git
 * IDE de sua preferência
 
+### IDEs recomendadas
+
+* IntelliJ IDEA
+* Visual Studio Code
+* Eclipse
+
 ---
 
 # ▶️ Como Executar o Projeto
@@ -171,18 +179,69 @@ Antes de executar o projeto, é necessário possuir:
 git clone <URL_DO_REPOSITORIO>
 ```
 
+---
+
 ## 2. Acesse a pasta do projeto
 
 ```bash
 cd TCC
 ```
 
+---
+
 ## 3. Configure o banco de dados
+
+Edite o arquivo:
+
+```bash
+src/main/resources/application.properties
+```
+
+Configure:
 
 ```properties
 spring.datasource.url=
 spring.datasource.username=
 spring.datasource.password=
+```
+
+---
+
+## 4. Execute o projeto
+
+### Windows
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+### Linux / Mac
+
+```bash
+./mvnw spring-boot:run
+```
+
+---
+
+# 🌐 Acessando a Aplicação
+
+Após iniciar o sistema, acesse:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+# 📧 Configuração de E-mail
+
+O sistema utiliza envio de e-mails para autenticação e recuperação de senha.
+
+No arquivo `application.properties`, configure:
+
+```properties
+spring.mail.username=
+spring.mail.password=
 ```
 
 ---
@@ -194,12 +253,29 @@ O projeto implementa diversas práticas voltadas à segurança:
 * Criptografia de senhas
 * Autenticação em dois fatores
 * Controle de tentativas de login
+* Validação de dados
 * Recuperação segura de senha
 * Uso de keystore SSL
 * Verificação por e-mail
 
 ---
 
+# 📚 Conceitos Aplicados
+
+Durante o desenvolvimento deste projeto foram aplicados conceitos importantes da área de desenvolvimento de software:
+
+* Arquitetura MVC
+* Programação Orientada a Objetos
+* Desenvolvimento Web com Spring Boot
+* Persistência de dados com JPA
+* Segurança de aplicações web
+* Integração com banco de dados
+* Renderização server-side
+* Envio de e-mails automáticos
+* Organização de projetos escaláveis
+* Estruturação de sistemas corporativos
+
+---
 
 # 🧪 Estrutura das Telas
 
@@ -219,8 +295,16 @@ O projeto já possui diversas interfaces implementadas:
 
 O projeto utiliza integração com Swagger/OpenAPI.
 
+Após iniciar a aplicação, a documentação poderá ser acessada em:
+
 ```bash
 http://localhost:8080/swagger-ui.html
+```
+
+ou
+
+```bash
+http://localhost:8080/swagger-ui/index.html
 ```
 
 ---
