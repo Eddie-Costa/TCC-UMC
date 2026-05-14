@@ -34,3 +34,25 @@ Este projeto foi desenvolvido com os seguintes objetivos:
 * Desenvolver páginas dinâmicas com Thymeleaf
 * Aplicar conceitos de segurança e criptografia
 * Criar uma base sólida para futuras expansões do sistema
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+| Tecnologia             | Descrição                             |
+| ---------------------- | ------------------------------------- |
+| Java 21                | Linguagem principal da aplicação      |
+| Spring Boot 4.0.5      | Framework principal do projeto        |
+| Spring MVC             | Estrutura web e controle de rotas     |
+| Thymeleaf              | Renderização de páginas HTML          |
+| Spring Data JPA        | Persistência de dados                 |
+| MySQL                  | Banco de dados principal              |
+| H2 Database            | Banco de dados em memória para testes |
+| Lombok                 | Redução de código boilerplate         |
+| Maven                  | Gerenciamento de dependências         |
+| Spring Mail            | Envio de e-mails automáticos          |
+| Spring Security Crypto | Criptografia de senhas                |
+| OpenAPI / Swagger      | Documentação de APIs                  |
+| HTML5                  | Estrutura das páginas                 |
+| CSS3                   | Estilização da interface              |
+| JavaScript             | Recursos interativos                  |
