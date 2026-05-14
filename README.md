@@ -236,3 +236,15 @@ LICENSE
 ```
 
 ---
+
+# 👨‍💻 Equipe de Desenvolvimento
+
+Projeto desenvolvido como Trabalho de Conclusão de Curso (TCC).
+
+### Desenvolvedores
+
+* Matheus Santhiago Fortonato
+* Eddie Alencar Costa
+* Riquelmy Christofer
+
+---
