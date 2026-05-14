@@ -197,3 +197,13 @@ O projeto implementa diversas práticas voltadas à segurança:
 * Recuperação segura de senha
 * Uso de keystore SSL
 * Verificação por e-mail
+
+---
+
+# 📖 Documentação da API
+
+O projeto utiliza integração com Swagger/OpenAPI.
+
+```bash
+http://localhost:8080/swagger-ui.html
+```
