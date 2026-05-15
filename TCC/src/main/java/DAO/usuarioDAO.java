@@ -19,7 +19,7 @@ public class usuarioDAO {
         Connection conn = DriverManager.getConnection(url, user, password);
 
         // SQL
-        String sql = "INSERT INTO pessoas (NOME, SOBRENOME, EMAIL, SENHA) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO public.pessoas (\"NOME\", \"SOBRENOME\", \"EMAIL\", \"SENHA\") VALUES (?, ?, ?, ?)";
 
         // preparar
         PreparedStatement stmt = conn.prepareStatement(sql);
@@ -44,7 +44,7 @@ public class usuarioDAO {
         Connection conn = DriverManager.getConnection(url, user, password);
 
         // SQL
-        String sql = "Select SENHA FROM pessoas where EMAIL = ?";
+        String sql = "SELECT \"SENHA\" FROM pessoas WHERE \"EMAIL\" = ?";
 
         // preparar
         PreparedStatement stmt = conn.prepareStatement(sql);
@@ -69,7 +69,7 @@ public class usuarioDAO {
     public void UpdateSenhaUsuario(String SENHA, String EMAIL) throws SQLException {
         Connection conn = DriverManager.getConnection(url, user, password);
 
-        String sql = "UPDATE pessoas SET SENHA = ? WHERE EMAIL = ?";
+        String sql = "UPDATE pessoas SET \"SENHA\" = ? WHERE \"EMAIL\" = ?";
 
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, SENHA);
@@ -86,7 +86,7 @@ public class usuarioDAO {
 
     public LoginDTO buscarPorEmail(String email) throws SQLException {
 
-        String sql = "SELECT * FROM pessoas WHERE email = ?";
+        String sql = "SELECT * FROM pessoas WHERE \"EMAIL\" = ?";
 
         Connection conn = DriverManager.getConnection(url, user, password);
 
