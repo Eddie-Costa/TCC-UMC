@@ -240,6 +240,7 @@ src
 | ✅ | 8.6 Domínio técnico na apresentação |
 | ✅ | 8.7 Capacidade de resposta às perguntas |
 
+
 ---
 
 # ⚙️ Configuração do Ambiente
