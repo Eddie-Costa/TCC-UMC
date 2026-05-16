@@ -1261,3 +1261,1244 @@ Caused by: org.springframework.util.PlaceholderResolutionException: Could not re
 2026-05-16T14:40:55.412-03:00  WARN 5652 --- [TCC] [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][index] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template index, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
 2026-05-16T14:40:57.032-03:00  INFO 5652 --- [TCC] [http-nio-8080-exec-1] c.example.controller.LogoutController    : Sessão de usuario invalidada
 2026-05-16T14:40:57.039-03:00  WARN 5652 --- [TCC] [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][index] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template index, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T14:57:31.682-03:00  INFO 5652 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T14:57:32.852-03:00  INFO 5652 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T14:57:32.948-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 5652 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T14:57:32.949-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T14:57:33.314-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T14:57:33.314-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T14:57:33.403-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T14:57:35.199-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@65e0749a
+2026-05-16T14:57:35.200-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T14:57:36.415-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.5 seconds (process running for 1252.022)
+2026-05-16T14:57:36.416-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T14:57:36.416-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:02:28.803-03:00  INFO 5652 --- [TCC] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-16T15:02:33.738-03:00  INFO 5652 --- [TCC] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-05-16T15:02:33.833-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 5652 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:02:33.834-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:02:34.120-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:02:34.120-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:02:34.197-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-16T15:02:35.965-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7c676642
+2026-05-16T15:02:35.965-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-16T15:02:37.178-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.37 seconds (process running for 1552.785)
+2026-05-16T15:02:37.179-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:02:37.179-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:05:35.013-03:00  INFO 5652 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:05:35.035-03:00  WARN 5652 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][index] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template index, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:08:16.883-03:00  INFO 5652 --- [TCC] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-05-16T15:08:17.745-03:00  INFO 5652 --- [TCC] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-05-16T15:08:17.835-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 5652 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:08:17.835-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:08:18.205-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:08:18.205-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:08:18.352-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-05-16T15:08:20.127-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@78b8a65c
+2026-05-16T15:08:20.128-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-05-16T15:08:21.391-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.605 seconds (process running for 1896.998)
+2026-05-16T15:08:21.393-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:08:21.393-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:17:06.835-03:00  INFO 5652 --- [TCC] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-05-16T15:17:07.608-03:00  INFO 5652 --- [TCC] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-05-16T15:17:12.449-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 5652 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:17:12.449-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:17:12.673-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:17:12.674-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:17:12.779-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-05-16T15:17:14.547-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@21294d51
+2026-05-16T15:17:14.547-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-05-16T15:17:15.769-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.345 seconds (process running for 2431.377)
+2026-05-16T15:17:15.771-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:17:15.771-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:17:16.039-03:00  INFO 8356 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 8356 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:17:16.042-03:00  INFO 8356 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:17:17.442-03:00  INFO 8356 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:17:17.443-03:00  INFO 8356 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:17:18.421-03:00  INFO 8356 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:17:20.681-03:00  INFO 8356 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:17:20.682-03:00  INFO 8356 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:17:22.902-03:00  INFO 8356 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:17:23.605-03:00  INFO 8356 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:17:23.629-03:00 ERROR 8356 --- [TCC] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-16T15:18:27.023-03:00  INFO 11752 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 11752 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:18:27.025-03:00  INFO 11752 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:18:28.270-03:00  INFO 11752 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:18:28.270-03:00  INFO 11752 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:18:28.911-03:00  INFO 11752 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:18:30.996-03:00  INFO 11752 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:18:30.997-03:00  INFO 11752 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:18:32.991-03:00  INFO 11752 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.381 seconds (process running for 6.887)
+2026-05-16T15:18:32.996-03:00  WARN 11752 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:18:32.997-03:00  WARN 11752 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:18:36.718-03:00  INFO 11752 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:18:37.050-03:00  WARN 11752 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][index] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template index, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:18:38.552-03:00  WARN 11752 --- [TCC] [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:18:47.293-03:00  INFO 11752 --- [TCC] [http-nio-8080-exec-3] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:18:57.260-03:00 ERROR 11752 --- [TCC] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:23) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:21:18.997-03:00  INFO 11752 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:21:37.415-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 5652 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:21:37.419-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:21:38.824-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:21:38.825-03:00  INFO 5652 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:21:39.563-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:21:41.664-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6be09f32
+2026-05-16T15:21:41.666-03:00  INFO 5652 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:21:43.794-03:00  INFO 5652 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.815 seconds (process running for 7.305)
+2026-05-16T15:21:43.798-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:21:43.799-03:00  WARN 5652 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:21:48.648-03:00  INFO 5652 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:21:48.903-03:00  WARN 5652 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:21:55.511-03:00  INFO 5652 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:22:05.490-03:00 ERROR 5652 --- [TCC] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:23) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:23:58.729-03:00  INFO 3876 --- [TCC] [main] com.example.TCCApplicationTests          : Starting TCCApplicationTests using Java 23 with PID 3876 (started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:23:58.731-03:00  INFO 3876 --- [TCC] [main] com.example.TCCApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:24:00.853-03:00  INFO 3876 --- [TCC] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:24:03.007-03:00  INFO 3876 --- [TCC] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@285c63cf
+2026-05-16T15:24:03.009-03:00  INFO 3876 --- [TCC] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:24:06.509-03:00  INFO 3876 --- [TCC] [main] com.example.TCCApplicationTests          : Started TCCApplicationTests in 8.187 seconds (process running for 9.45)
+2026-05-16T15:24:06.515-03:00  WARN 3876 --- [TCC] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:24:06.515-03:00  WARN 3876 --- [TCC] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:24:07.379-03:00  INFO 3876 --- [TCC] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:24:08.966-03:00  INFO 3876 --- [TCC] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:24:22.892-03:00  INFO 10876 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 10876 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:24:22.895-03:00  INFO 10876 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:24:24.189-03:00  INFO 10876 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:24:24.189-03:00  INFO 10876 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:24:24.858-03:00  INFO 10876 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:24:26.965-03:00  INFO 10876 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:24:26.966-03:00  INFO 10876 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:24:28.977-03:00  INFO 10876 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.514 seconds (process running for 7.02)
+2026-05-16T15:24:28.979-03:00  WARN 10876 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:24:28.979-03:00  WARN 10876 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:24:32.103-03:00  INFO 10876 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:24:32.743-03:00  INFO 10876 --- [TCC] [http-nio-8080-exec-1] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:24:42.693-03:00 ERROR 10876 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:23) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:25:25.544-03:00  INFO 10876 --- [TCC] [http-nio-8080-exec-3] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:25:35.422-03:00 ERROR 10876 --- [TCC] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:23) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:25:55.675-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 16144 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:25:55.678-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:25:56.884-03:00  INFO 16144 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:25:56.885-03:00  INFO 16144 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:25:57.564-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:25:59.787-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:25:59.788-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:26:01.808-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.599 seconds (process running for 7.116)
+2026-05-16T15:26:01.810-03:00  WARN 16144 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:26:01.811-03:00  WARN 16144 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:26:01.982-03:00  INFO 16144 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:26:02.249-03:00  WARN 16144 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:26:09.573-03:00  INFO 16144 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:26:19.430-03:00 ERROR 16144 --- [TCC] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:23) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:28:39.613-03:00  INFO 16144 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:28:41.547-03:00  INFO 16144 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:28:41.649-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 16144 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:28:41.649-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:28:41.916-03:00  INFO 16144 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:28:41.916-03:00  INFO 16144 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:28:42.060-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T15:28:43.946-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@456b07bd
+2026-05-16T15:28:43.947-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T15:28:45.159-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.534 seconds (process running for 170.468)
+2026-05-16T15:28:45.160-03:00  WARN 16144 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:28:45.161-03:00  WARN 16144 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:29:25.964-03:00  INFO 16144 --- [TCC] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-16T15:29:27.907-03:00  INFO 16144 --- [TCC] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-05-16T15:29:28.022-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 16144 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:29:28.022-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:29:28.263-03:00  INFO 16144 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:29:28.263-03:00  INFO 16144 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:29:28.334-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-16T15:29:30.095-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7aa857b2
+2026-05-16T15:29:30.095-03:00  INFO 16144 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-16T15:29:31.238-03:00  INFO 16144 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.239 seconds (process running for 216.546)
+2026-05-16T15:29:31.239-03:00  WARN 16144 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:29:31.239-03:00  WARN 16144 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:29:50.267-03:00  INFO 5012 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 5012 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:29:50.270-03:00  INFO 5012 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:29:51.492-03:00  INFO 5012 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:29:51.493-03:00  INFO 5012 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:29:52.138-03:00  INFO 5012 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:29:54.220-03:00  INFO 5012 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:29:54.221-03:00  INFO 5012 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:29:56.392-03:00  INFO 5012 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.604 seconds (process running for 7.149)
+2026-05-16T15:29:56.395-03:00  WARN 5012 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:29:56.395-03:00  WARN 5012 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:29:57.961-03:00  INFO 5012 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:29:58.239-03:00  WARN 5012 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:30:07.105-03:00  INFO 5012 --- [TCC] [http-nio-8080-exec-6] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:30:17.058-03:00 ERROR 5012 --- [TCC] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:33:11.758-03:00  INFO 11784 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 11784 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:33:11.761-03:00  INFO 11784 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:33:12.994-03:00  INFO 11784 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:33:12.994-03:00  INFO 11784 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:33:13.647-03:00  INFO 11784 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:33:15.773-03:00  INFO 11784 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:33:15.776-03:00  INFO 11784 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:33:17.782-03:00  INFO 11784 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.448 seconds (process running for 6.93)
+2026-05-16T15:33:17.786-03:00  WARN 11784 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:33:17.787-03:00  WARN 11784 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:33:44.126-03:00  INFO 11784 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:33:44.397-03:00  WARN 11784 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:33:51.832-03:00  INFO 11784 --- [TCC] [http-nio-8080-exec-6] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:34:01.665-03:00 ERROR 11784 --- [TCC] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:34:58.582-03:00  INFO 15900 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 15900 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:34:58.587-03:00  INFO 15900 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:34:59.826-03:00  INFO 15900 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:34:59.827-03:00  INFO 15900 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:35:00.506-03:00  INFO 15900 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:35:01.513-03:00  INFO 15900 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.403 seconds (process running for 3.895)
+2026-05-16T15:35:01.515-03:00  WARN 15900 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:35:01.516-03:00  WARN 15900 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:35:06.240-03:00  INFO 15900 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:35:06.509-03:00  WARN 15900 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:35:13.980-03:00  INFO 15900 --- [TCC] [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:35:13.984-03:00 ERROR 15900 --- [TCC] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, ${DB_URL}] with root cause
+
+java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, ${DB_URL}
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:116) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:336) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:121) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:90) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-7.0.2.jar:na]
+	at com.example.DAO.usuarioDAO.QueryLoginUsuario(usuarioDAO.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.6.jar:7.0.6]
+	at com.example.DAO.usuarioDAO$$SpringCGLIB$$0.QueryLoginUsuario(<generated>) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:67) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:35:35.337-03:00  INFO 15900 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 15900 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:35:35.338-03:00  INFO 15900 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:35:35.673-03:00  INFO 15900 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:35:35.673-03:00  INFO 15900 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:35:35.748-03:00  INFO 15900 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T15:35:37.975-03:00  INFO 15900 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2627b168
+2026-05-16T15:35:37.976-03:00  INFO 15900 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T15:39:10.162-03:00  INFO 13956 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 13956 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:39:10.166-03:00  INFO 13956 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:39:11.456-03:00  INFO 13956 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:39:11.456-03:00  INFO 13956 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:39:12.120-03:00  INFO 13956 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:39:14.226-03:00  INFO 13956 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:39:14.228-03:00  INFO 13956 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:39:16.475-03:00  INFO 13956 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.769 seconds (process running for 7.277)
+2026-05-16T15:39:16.479-03:00  WARN 13956 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:39:16.479-03:00  WARN 13956 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:39:17.445-03:00  INFO 13956 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:39:17.711-03:00  WARN 13956 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:39:26.291-03:00  INFO 13956 --- [TCC] [http-nio-8080-exec-4] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:39:36.124-03:00 ERROR 13956 --- [TCC] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:41:03.848-03:00  INFO 13956 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:41:04.819-03:00  INFO 13956 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:41:04.906-03:00  INFO 13956 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 13956 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:41:04.907-03:00  INFO 13956 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:41:05.336-03:00  INFO 13956 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:41:05.336-03:00  INFO 13956 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:41:05.486-03:00  INFO 13956 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T15:41:06.735-03:00  INFO 8720 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 8720 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:41:06.739-03:00  INFO 8720 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:41:07.274-03:00  INFO 13956 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6a21ef2e
+2026-05-16T15:41:07.275-03:00  INFO 13956 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T15:41:07.982-03:00  INFO 8720 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:41:07.983-03:00  INFO 8720 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:41:08.448-03:00  INFO 13956 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.573 seconds (process running for 119.251)
+2026-05-16T15:41:08.449-03:00  WARN 13956 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:41:08.449-03:00  WARN 13956 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:41:08.688-03:00  INFO 8720 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:41:10.784-03:00  INFO 8720 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6be09f32
+2026-05-16T15:41:10.787-03:00  INFO 8720 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:41:11.674-03:00  INFO 13956 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:41:11.687-03:00  WARN 13956 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:41:12.834-03:00  INFO 8720 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:41:13.902-03:00  INFO 8720 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:41:13.932-03:00 ERROR 8720 --- [TCC] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-16T15:41:19.062-03:00  INFO 13956 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:41:46.600-03:00  INFO 16584 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 16584 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:41:46.603-03:00  INFO 16584 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:41:47.899-03:00  INFO 16584 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:41:47.900-03:00  INFO 16584 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:41:48.663-03:00  INFO 16584 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:41:50.757-03:00  INFO 16584 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:41:50.759-03:00  INFO 16584 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:41:52.870-03:00  INFO 16584 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.723 seconds (process running for 7.325)
+2026-05-16T15:41:52.873-03:00  WARN 16584 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:41:52.874-03:00  WARN 16584 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:41:52.914-03:00  INFO 16584 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:41:53.220-03:00  WARN 16584 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:42:01.153-03:00  INFO 16584 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:42:21.007-03:00  WARN 16584 --- [TCC] [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][verificar] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template verificar, line 10, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:46:40.102-03:00  INFO 16584 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:46:40.301-03:00  INFO 16584 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:47:18.965-03:00  INFO 16584 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 16584 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:47:18.965-03:00  INFO 16584 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:47:19.185-03:00  INFO 16584 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:47:19.185-03:00  INFO 16584 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:47:19.285-03:00  INFO 16584 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T15:47:21.085-03:00  INFO 16584 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3d851591
+2026-05-16T15:47:21.086-03:00  INFO 16584 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T15:47:22.088-03:00  INFO 17080 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 17080 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:47:22.092-03:00  INFO 17080 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:47:22.262-03:00  INFO 16584 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.328 seconds (process running for 336.718)
+2026-05-16T15:47:22.264-03:00  WARN 16584 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:47:22.264-03:00  WARN 16584 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:47:23.363-03:00  INFO 17080 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:47:23.364-03:00  INFO 17080 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:47:24.052-03:00  INFO 17080 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:47:26.146-03:00  INFO 17080 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:47:26.146-03:00  INFO 17080 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:47:28.263-03:00  INFO 17080 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:47:29.258-03:00  INFO 17080 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:47:29.279-03:00 ERROR 17080 --- [TCC] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-16T15:47:46.499-03:00  INFO 14776 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 14776 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:47:46.502-03:00  INFO 14776 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:47:47.756-03:00  INFO 14776 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:47:47.757-03:00  INFO 14776 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:47:48.438-03:00  INFO 14776 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:47:50.513-03:00  INFO 14776 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:47:50.513-03:00  INFO 14776 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:47:52.477-03:00  INFO 14776 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.405 seconds (process running for 6.927)
+2026-05-16T15:47:52.481-03:00  WARN 14776 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:47:52.481-03:00  WARN 14776 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:48:21.384-03:00  INFO 14776 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:48:21.659-03:00  WARN 14776 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:48:30.575-03:00  INFO 14776 --- [TCC] [http-nio-8080-exec-6] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:48:40.397-03:00 ERROR 14776 --- [TCC] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:49:25.772-03:00  INFO 12260 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 12260 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:49:25.776-03:00  INFO 12260 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:49:26.970-03:00  INFO 12260 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:49:26.971-03:00  INFO 12260 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:49:27.616-03:00  INFO 12260 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:49:29.728-03:00  INFO 12260 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cad6b8c
+2026-05-16T15:49:29.729-03:00  INFO 12260 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:49:31.722-03:00  INFO 12260 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.398 seconds (process running for 6.884)
+2026-05-16T15:49:31.724-03:00  WARN 12260 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:49:31.725-03:00  WARN 12260 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:49:35.456-03:00  INFO 12260 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:49:35.749-03:00  WARN 12260 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:49:45.170-03:00  INFO 12260 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:49:55.019-03:00 ERROR 12260 --- [TCC] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:50:11.469-03:00  INFO 12260 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:50:13.404-03:00  INFO 12260 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:50:19.260-03:00  INFO 12260 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 12260 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:50:19.261-03:00  INFO 12260 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:50:19.551-03:00  INFO 12260 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:50:19.551-03:00  INFO 12260 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:50:19.657-03:00  INFO 12260 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T15:50:21.451-03:00  INFO 12260 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@47c3bafb
+2026-05-16T15:50:21.451-03:00  INFO 12260 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T15:50:22.387-03:00  INFO 15048 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 15048 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:50:22.391-03:00  INFO 15048 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:50:22.644-03:00  INFO 12260 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.413 seconds (process running for 57.807)
+2026-05-16T15:50:22.645-03:00  WARN 12260 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:50:22.645-03:00  WARN 12260 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:50:23.662-03:00  INFO 15048 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:50:23.662-03:00  INFO 15048 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:50:24.425-03:00  INFO 15048 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:50:26.508-03:00  INFO 15048 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:50:26.510-03:00  INFO 15048 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:50:28.525-03:00  INFO 15048 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T15:50:29.631-03:00  INFO 15048 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T15:50:29.652-03:00 ERROR 15048 --- [TCC] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-16T15:50:29.816-03:00  INFO 12260 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:50:41.989-03:00  INFO 16068 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 16068 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:50:41.992-03:00  INFO 16068 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:50:43.186-03:00  INFO 16068 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:50:43.187-03:00  INFO 16068 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:50:43.833-03:00  INFO 16068 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:50:45.907-03:00  INFO 16068 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T15:50:45.909-03:00  INFO 16068 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:50:47.901-03:00  INFO 16068 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.323 seconds (process running for 6.781)
+2026-05-16T15:50:47.905-03:00  WARN 16068 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:50:47.905-03:00  WARN 16068 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:50:56.876-03:00  INFO 16068 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:50:57.133-03:00  WARN 16068 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:51:04.694-03:00  INFO 16068 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:51:14.548-03:00 ERROR 16068 --- [TCC] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T15:57:50.510-03:00  INFO 13148 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 13148 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T15:57:50.514-03:00  INFO 13148 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T15:57:51.798-03:00  INFO 13148 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T15:57:51.798-03:00  INFO 13148 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T15:57:52.529-03:00  INFO 13148 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T15:57:54.612-03:00  INFO 13148 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ba8db95
+2026-05-16T15:57:54.614-03:00  INFO 13148 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T15:57:56.615-03:00  INFO 13148 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.556 seconds (process running for 7.088)
+2026-05-16T15:57:56.618-03:00  WARN 13148 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T15:57:56.619-03:00  WARN 13148 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T15:58:03.122-03:00  INFO 13148 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T15:58:03.389-03:00  WARN 13148 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T15:58:33.679-03:00  INFO 13148 --- [TCC] [http-nio-8080-exec-6] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T15:58:43.640-03:00 ERROR 13148 --- [TCC] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailAuthenticationException: Authentication failed] with root cause
+
+jakarta.mail.AuthenticationFailedException: 535 5.7.8 Authentication failed
+
+	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:304) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-7.0.6.jar:7.0.6]
+	at com.example.service.emailService.enviarCodigo(emailService.java:29) ~[classes/:na]
+	at com.example.controller.LoginPageController.fazerLogin(LoginPageController.java:80) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-05-16T16:02:20.558-03:00  INFO 13148 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T16:02:22.304-03:00  INFO 13148 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T16:02:22.390-03:00  INFO 13148 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 13148 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T16:02:22.390-03:00  INFO 13148 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T16:02:22.696-03:00  INFO 13148 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T16:02:22.696-03:00  INFO 13148 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T16:02:22.792-03:00  INFO 13148 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T16:02:24.582-03:00  INFO 13148 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3ef215c9
+2026-05-16T16:02:24.582-03:00  INFO 13148 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T16:02:25.782-03:00  INFO 13148 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.416 seconds (process running for 276.255)
+2026-05-16T16:02:25.784-03:00  WARN 13148 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T16:02:25.784-03:00  WARN 13148 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T16:02:52.556-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 620 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T16:02:52.559-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T16:02:53.984-03:00  INFO 620 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T16:02:53.984-03:00  INFO 620 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T16:02:54.654-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T16:02:56.778-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27ca3a77
+2026-05-16T16:02:56.780-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T16:02:58.789-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 6.737 seconds (process running for 7.252)
+2026-05-16T16:02:58.791-03:00  WARN 620 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T16:02:58.792-03:00  WARN 620 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T16:03:03.002-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T16:03:03.263-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:03:13.125-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-2] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T16:03:32.826-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][verificar] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template verificar, line 10, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:09:40.465-03:00  INFO 620 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T16:09:41.448-03:00  INFO 620 --- [TCC] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-16T16:09:41.526-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 620 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T16:09:41.527-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T16:09:41.822-03:00  INFO 620 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T16:09:41.822-03:00  INFO 620 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T16:09:41.901-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T16:09:43.663-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@51d31d4b
+2026-05-16T16:09:43.663-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T16:09:44.831-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.331 seconds (process running for 413.294)
+2026-05-16T16:09:44.833-03:00  WARN 620 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T16:09:44.833-03:00  WARN 620 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T16:15:49.695-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T16:15:49.707-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:16:00.200-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-5] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T16:16:19.977-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][verificar] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template verificar, line 10, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:16:35.722-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-10] c.e.controller.VerificarController       : O usuario passou na validação de token para login
+2026-05-16T16:16:36.112-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-10] c.e.controller.VerificarController       : A sessão do usuario foi criada com sucesso ID: 9B59BE8979464122C99C18D528EDB774
+2026-05-16T16:16:36.123-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][index] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template index, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:16:42.704-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-6] c.example.controller.LogoutController    : Sessão de usuario invalidada
+2026-05-16T16:16:42.713-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][index] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template index, line 11, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:17:18.733-03:00  INFO 620 --- [TCC] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-16T16:17:19.701-03:00  INFO 620 --- [TCC] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-05-16T16:17:19.775-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : Starting TCC_Application using Java 23 with PID 620 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-16T16:17:19.775-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T16:17:20.050-03:00  INFO 620 --- [TCC] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T16:17:20.051-03:00  INFO 620 --- [TCC] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-16T16:17:20.138-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-16T16:17:21.925-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7562ffbb
+2026-05-16T16:17:21.925-03:00  INFO 620 --- [TCC] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-16T16:17:23.080-03:00  INFO 620 --- [TCC] [restartedMain] com.example.TCC_Application              : Started TCC_Application in 3.333 seconds (process running for 871.542)
+2026-05-16T16:17:23.081-03:00  WARN 620 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-16T16:17:23.081-03:00  WARN 620 --- [TCC] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-16T16:19:07.938-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T16:19:07.951-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][loginPage] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template loginPage, line 12, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-05-16T16:19:15.558-03:00  INFO 620 --- [TCC] [http-nio-8080-exec-8] c.e.controller.LoginPageController       : Envio de codigo 2FA par o email: eddiealencarcosta@gmail.com
+2026-05-16T16:19:35.179-03:00  WARN 620 --- [TCC] [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][verificar] Deprecated unwrapped fragment expression "fragments/nav :: nav" found in template verificar, line 10, col 14. Please use the complete syntax of fragment expressions instead ("~{fragments/nav :: nav}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
