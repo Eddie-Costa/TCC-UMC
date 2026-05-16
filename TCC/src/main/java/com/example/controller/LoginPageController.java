@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import DAO.usuarioDAO;
+import com.example.DAO.usuarioDAO;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.example.service.LoginAttemptService;
 import com.example.service.TwoFactorService;
@@ -32,6 +32,9 @@ public class LoginPageController {
 
     @Autowired
     private emailService emailService;
+
+    @Autowired
+    private usuarioDAO usuarioDAO;
 
     @GetMapping("/login")
     public String loginPage(Model model) {
@@ -59,7 +62,6 @@ public class LoginPageController {
 
         //Encriptador
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(10);
-        usuarioDAO usuarioDAO = new usuarioDAO();
 
         //Requisição para o BD Buscar a senha criptografada e comparar com a senha digitada.
         String senhaHash = usuarioDAO.QueryLoginUsuario(usuarioDTO.getEmail());
