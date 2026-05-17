@@ -41,7 +41,7 @@ public class SubscriptionPageController{
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(10);
 
         //Inserção de dados no BD
-        usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail(), encoder.encode(usuario.getSenha()));
+        usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail().toLowerCase(), encoder.encode(usuario.getSenha()));
         logger.info("Sucesso ao cadastrar novo usuario");
 
         return "loginPage";
