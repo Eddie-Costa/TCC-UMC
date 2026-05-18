@@ -1,0 +1,34 @@
+/* FOnte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #EBEBEB;
+    font-family: "Inter", sans-serif;
+}
+
+.user-icon-profile{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Tratativa_dados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+
+    background-color: #5FA8D3;
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}

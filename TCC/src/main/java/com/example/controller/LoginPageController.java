@@ -80,6 +80,7 @@ public class LoginPageController {
             emailService.enviarCodigo(email, codigo);
 
             session.setAttribute("email2FA", email);
+            session.setAttribute("redirect", "Login");
 
             return "redirect:/verificar";
         }

@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"th:href="@{/css/IndexStyle.css}">
+    <link rel="stylesheet"th:href="@{/css/profileStyle.css}">
     <link rel="stylesheet" th:href="@{/css/navStyle.css}">
-    <title>Home</title>
+    <title>User Profile</title>
 </head>
 <body>
     <div th:replace="fragments/nav :: nav"></div>
+
+    <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon-profile">
+
+    <a th:href="@{/UserData}" class="Tratativa_dados">Meus Dados</a>
 
 </body>
 </html>

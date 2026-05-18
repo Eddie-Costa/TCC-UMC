@@ -39,6 +39,7 @@ public class ResetPaswordController {
 
     @GetMapping("/ResetPassword_Verification")
     public String ResetPasword_Verification() {
+
         return "ResetPassword_Verification";
     }
 
@@ -48,6 +49,7 @@ public class ResetPaswordController {
         String email = usuarioDTO.getEmail();
 
         session.setAttribute("email2FA", email);
+        session.setAttribute("redirect", "ResetPassword");
 
         //2FA
 
@@ -59,11 +61,16 @@ public class ResetPaswordController {
 
         logger.info("Solicitação de reset de senha para o email: {}", email);
 
-        return "redirect:/verificarReset";
+        return "redirect:/verificar";
     }
 
     @GetMapping("/ResetPassword")
-    public String ResetPasword(){
+    public String ResetPasword(HttpSession session){
+
+        if(session.getAttribute("email2FA") == null){
+            return "redirect:/ResetPassword_Verification";
+        }
+
         return "ResetPassword";
     }
 

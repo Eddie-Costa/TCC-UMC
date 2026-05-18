@@ -1,6 +1,9 @@
 package com.example.DAO;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import com.example.dto.LoginDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,18 +16,19 @@ import javax.sql.DataSource;
 public class usuarioDAO {
 
     String resultado;
+    ArrayList<String> Arrayresultado = new ArrayList<>();
 
     @Autowired
     private DataSource dataSource;
 
     public void InsertCadastroIntoBD(String NOME, String SOBRENOME, String EMAIL, String SENHA) throws SQLException {
-// conexão
+        // conexão
         Connection conn = dataSource.getConnection();
 
-// SQL
+        // SQL
         String sql = "INSERT INTO public.pessoas (\"NOME\", \"SOBRENOME\", \"EMAIL\", \"SENHA\") VALUES (?, ?, ?, ?)";
 
-// preparar
+        // preparar
         PreparedStatement stmt = conn.prepareStatement(sql);
 
 
@@ -33,11 +37,11 @@ public class usuarioDAO {
         stmt.setString(3, EMAIL);
         stmt.setString(4, SENHA);
 
-// executar
+        // executar
         stmt.executeUpdate();
         System.out.println("Inserido com sucesso!");
 
-// fechar
+        // fechar
 
         stmt.close();
         conn.close();
@@ -45,25 +49,24 @@ public class usuarioDAO {
     }
 
     public String QueryLoginUsuario(String EMAIL) throws SQLException {
-// conexão
+        // conexão
         Connection conn = dataSource.getConnection();
 
-// SQL
+        // SQL
         String sql = "SELECT \"SENHA\" FROM pessoas WHERE \"EMAIL\" = ?";
 
-// preparar
+        // preparar
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, EMAIL);
 
-//Realizar Querys
+        //Realizar Querys
         ResultSet rs = stmt.executeQuery();
 
         if (rs.next()) {
             resultado = rs.getString("SENHA");
-            System.out.println("Senha: " + resultado);
         }
 
-// fechar
+        // fechar
 
         rs.close();
         stmt.close();
@@ -72,7 +75,60 @@ public class usuarioDAO {
         return resultado;
     }
 
+    public void DeleteUser(String EMAIL) throws SQLException {
+        // conexão
+        Connection conn = dataSource.getConnection();
 
+        // SQL
+        String sql = "DELETE FROM pessoas WHERE \"EMAIL\" = ?";
+
+        // preparar
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, EMAIL);
+
+        //Realizar Querys
+        int linhasAfetadas = stmt.executeUpdate();
+
+        if(linhasAfetadas > 0){
+            System.out.println("Usuário deletado");
+        } else {
+            System.out.println("Nenhum usuário encontrado com o email: " + EMAIL);
+        }
+
+
+        // fechar
+        stmt.close();
+        conn.close();
+    }
+
+    public ArrayList<String> QueryUserData(String EMAIL) throws SQLException {
+        // conexão
+        Connection conn = dataSource.getConnection();
+
+        // SQL
+        String sql = "SELECT \"NOME\", \"SOBRENOME\", \"EMAIL\", \"DT_REGISTER\" FROM pessoas WHERE \"EMAIL\" = ?";
+
+        // preparar
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, EMAIL);
+
+        //Realizar Querys
+        ResultSet rs = stmt.executeQuery();
+
+        if (rs.next()) {
+            Arrayresultado.add(rs.getString("NOME"));
+            Arrayresultado.add(rs.getString("SOBRENOME"));
+            Arrayresultado.add(rs.getString("EMAIL"));
+            Arrayresultado.add(rs.getString("DT_REGISTER"));
+        }
+
+        // fechar
+        rs.close();
+        stmt.close();
+        conn.close();
+
+        return Arrayresultado;
+    }
 
     public void UpdateSenhaUsuario(String SENHA, String EMAIL) throws SQLException {
         Connection conn = dataSource.getConnection();
@@ -107,9 +163,9 @@ public class usuarioDAO {
             usuario.setEmail(rs.getString("EMAIL"));
             usuario.setSenha(rs.getString("SENHA"));
 
-// se tiver mais campos:
+        // se tiver mais campos:
 
-// usuario.setNome(rs.getString("nome"));
+        // usuario.setNome(rs.getString("nome"));
 
             return usuario;
         }

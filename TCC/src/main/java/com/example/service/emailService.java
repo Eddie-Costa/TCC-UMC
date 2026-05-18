@@ -28,4 +28,25 @@ public class emailService {
         System.out.println("Email enviado com sucesso!");
     }
 
+    @Async
+    public void enviarEmailDados(String para, String Nome, String Sobrenome, String Email, String DT_Reg) {
+
+        SimpleMailMessage mensagem = new SimpleMailMessage();
+
+        mensagem.setFrom("tccumcriqedmat@gmail.com");
+        mensagem.setTo(para);
+        mensagem.setSubject("Dados pessoais - Exportação de dados");
+        String corpoEmail =
+                "Nome: " + Nome + "\n" +
+                "Sobrenome: " + Sobrenome + "\n" +
+                "Email: " + Email + "\n" +
+                "Data de Registro: " + DT_Reg;
+
+        mensagem.setText(corpoEmail);
+
+        mailSender.send(mensagem);
+
+        System.out.println("Email enviado com sucesso!");
+    }
+
 }
