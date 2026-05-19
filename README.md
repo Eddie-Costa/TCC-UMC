@@ -4,11 +4,11 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen)
 ![Spring MVC](https://img.shields.io/badge/Spring-MVC-success)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template-darkgreen)
-![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?logo=supabaselogoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-Build-red)
 ![Security](https://img.shields.io/badge/Security-2FA-important)
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 ---
 
@@ -48,16 +48,18 @@ Este projeto foi desenvolvido com os seguintes objetivos:
 | Spring MVC             | Estrutura web e controle de rotas     |
 | Thymeleaf              | Renderização de páginas HTML          |
 | Spring Data JPA        | Persistência de dados                 |
-| MySQL                  | Banco de dados principal              |
-| H2 Database            | Banco de dados em memória para testes |
+| Supabase               | Banco de dados principal              |
 | Lombok                 | Redução de código boilerplate         |
 | Maven                  | Gerenciamento de dependências         |
-| Spring Mail            | Envio de e-mails automáticos          |
-| Spring Security Crypto | Criptografia de senhas                |
+| Bcrypt                 | Criptografia de senhas                |
 | OpenAPI / Swagger      | Documentação de APIs                  |
 | HTML5                  | Estrutura das páginas                 |
 | CSS3                   | Estilização da interface              |
 | JavaScript             | Recursos interativos                  |
+| Render                | Hospedagem gratuita da aplicação       |
+| Brevo                 | Serviço de envio de e-mails e autenticação 2FA             |
+| .env                  | Armazenamento seguro de variáveis de ambiente              |
+| Dockerfile            | Containerização da aplicação para deploy no Render/Docker  |
 
 ---
 
@@ -251,7 +253,7 @@ Antes de executar o projeto, é necessário possuir:
 
 * Java JDK 21+
 * Maven 3.9+
-* MySQL Server
+* Conta configurada no Supabase
 * Git
 * IDE de sua preferência
 
@@ -403,7 +405,7 @@ http://localhost:8080/swagger-ui/index.html
 
 # 📜 Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença (Apache-2.0 license)
 
 Consulte o arquivo:
 
