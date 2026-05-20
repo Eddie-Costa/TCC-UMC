@@ -10,11 +10,21 @@
     height: 60px;
 }
 
-.nav{
+.nav {
     height: 80px;
-    border-bottom: 1px solid;
-    border-color: rgba(0, 0, 0, 0.158);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
 
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #EBEBEB;
+    z-index: 1000;
+}
+
+.body{
+    padding-top: 80px;
 }
 
 .nav-itens{

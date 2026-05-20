@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import DAO.usuarioDAO;
+import com.example.DAO.usuarioDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,14 +27,14 @@ public class VerificarController {
     @Autowired
     private emailService emailService;
 
-    usuarioDAO usuarioDAO = new usuarioDAO();
+    @Autowired
+    private usuarioDAO usuarioDAO;
 
     //Verificar LOGIN
 
     @GetMapping("/verificar")
     public String paginaVerificacao(HttpSession session) {
 
-        // Segurança: impedir acesso direto
         if (session.getAttribute("email2FA") == null) {
             return "redirect:/login";
         }
@@ -48,76 +48,84 @@ public class VerificarController {
                                   HttpSession session,
                                   Model model) throws SQLException {
 
-        String email = (String) session.getAttribute("email2FA");
+        if(session.getAttribute("redirect") == "Login"){
 
-        //  Segurança
-        if (email == null) {
-            logger.warn("Email invalido com valor: {}", email);
-            return "redirect:/login";
+            String email = (String) session.getAttribute("email2FA");
+
+            //  Segurança
+            if (email == null) {
+                logger.warn("Email invalido com valor: {}", email);
+                return "redirect:/login";
+            }
+
+            if (twoFactorService.validarCodigo(email, codigo)) {
+                logger.info("O usuario passou na validação de token para login");
+
+
+                // BUSCA USUÁRIO REAL
+                LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
+
+                // CRIA SESSÃO CORRETA
+                session.setAttribute("usuarioLogado", usuario);
+                session.setMaxInactiveInterval(900);
+                logger.info("A sessão do usuario foi criada com sucesso ID: {}", session.getId());
+
+                return "redirect:/home";
+            }
+        } else if (session.getAttribute("redirect") == "ResetPassword") {
+
+            // Segurança: impedir acesso direto
+            if (session.getAttribute("email2FA") == null) {
+                logger.warn("Email invalido com valor: {}", session.getAttribute("email2FA"));
+                return "redirect:/ResetPassword_Verification";
+            }
+
+            String email = (String) session.getAttribute("email2FA");
+
+            if (twoFactorService.validarCodigo(email, codigo)) {
+                logger.info("O usuario passou na validação de token para Reset de senha");
+
+                // BUSCA USUÁRIO REAL
+                LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
+
+                return "redirect:/ResetPassword";
+            }else{
+                // Código inválido
+                model.addAttribute("erro", "Código inválido ou expirado");
+                logger.warn("Codigo 2FA inválido inserido");
+                return "verificar";
+            }
+
+        }else if (session.getAttribute("redirect") == "ExcluirDados"){
+
+            // Segurança: impedir acesso direto
+            if (session.getAttribute("email2FA") == null) {
+                logger.warn("Email invalido com valor: {}", session.getAttribute("email2FA"));
+                return "redirect:/ResetPassword_Verification";
+            }
+
+            String email = (String) session.getAttribute("email2FA");
+
+            if (twoFactorService.validarCodigo(email, codigo)) {
+                logger.info("O usuario passou na validação de token para Reset de senha");
+
+                usuarioDAO.DeleteUser(email);
+
+
+
+                return "redirect:/logout";
+            }else{
+                // Código inválido
+                model.addAttribute("erro", "Código inválido ou expirado");
+                logger.warn("Codigo 2FA inválido inserido");
+                return "verificar";
+            }
         }
 
-        if (twoFactorService.validarCodigo(email, codigo)) {
-            logger.info("O usuario passou na validação de token para login");
 
-            // BUSCA USUÁRIO REAL
-            LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
-
-            // CRIA SESSÃO CORRETA
-            session.setAttribute("usuarioLogado", usuario);
-            session.setMaxInactiveInterval(900);
-            logger.info("A sessão do usuario foi criada com sucesso ID: {}", session.getId());
-
-            session.removeAttribute("email2FA");
-
-            return "redirect:/home";
-        }
-
-        // Código inválido
+        // Código inválido Geral
         model.addAttribute("erro", "Código inválido ou expirado");
         logger.warn("Codigo 2FA inválido inserido");
         return "verificar";
-    }
-
-    //Verificar RESET
-
-    @GetMapping("/verificarReset")
-    public String paginaVerificacaoReset(HttpSession session) {
-
-        // Segurança: impedir acesso direto
-        if (session.getAttribute("email2FA") == null) {
-            logger.warn("Email invalido com valor: {}", session.getAttribute("email2FA"));
-            return "redirect:/ResetPassword_Verification";
-        }
-
-        return "verificarReset";
-    }
-
-    @PostMapping("/ResetVerificar")
-    public String verificarCodigoRest(LoginDTO usuarioDTO,
-                                  @RequestParam String codigo,
-                                  HttpSession session,
-                                  Model model) throws SQLException {
-
-        String email = (String) session.getAttribute("email2FA");
-
-        //  Segurança
-        if (email == null) {
-            logger.warn("Email invalido com valor: {}", email);
-            return "redirect:/ResetPassword_Verification";
-        }
-
-        if (twoFactorService.validarCodigo(email, codigo)) {
-            logger.info("O usuario passou na validação de token para Reset de senha");
-
-            // BUSCA USUÁRIO REAL
-            LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
-
-            return "redirect:/ResetPassword";
-        }
-
-        // Código inválido
-        model.addAttribute("erro", "Código inválido ou expirado");
-        logger.warn("Codigo 2FA inválido inserido");
-        return "verificarReset";
     }
 }

@@ -15,6 +15,10 @@ public class LogoutController {
 
     @GetMapping("/logout")
     public String logout(HttpSession session) {
+        if(session.getAttribute("usuarioLogado") == null){
+            return "redirect:/home";
+        }
+
         session.invalidate();
         logger.info("Sessão de usuario invalidada");
         return "redirect:/home";

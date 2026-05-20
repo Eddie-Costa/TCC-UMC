@@ -1,16 +1,20 @@
 FROM ubuntu:latest AS build
 
-RUN apt-get update
-RUN apt-get install openjdk-23-jdk -y
-COPY src .
+RUN apt-get update && \
+    apt-get install -y openjdk-17-jdk maven
 
-RUN apt-get install maven -y
-RUN mvn clean install
+WORKDIR /app
 
-FROM openjdk:23-jdk-slim
+COPY . .
 
-EXPOSE 8443
+RUN mvn clean package -DskipTests
 
-COPY --from=build /target/TCC-0.0.1-SNAPSHOT.jar app.jar
+FROM eclipse-temurin:17-jdk-jammy
 
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+WORKDIR /app
+
+COPY --from=build /app/target/TCC-0.0.1-SNAPSHOT.jar app.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app.jar"]

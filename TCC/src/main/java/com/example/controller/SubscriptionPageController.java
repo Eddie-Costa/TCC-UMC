@@ -4,20 +4,22 @@ import com.example.dto.SubscriptionDTO;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import DAO.usuarioDAO;
+import com.example.DAO.usuarioDAO;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.sql.SQLException;
 
 @Controller
 public class SubscriptionPageController{
+
+    @Autowired
+    private usuarioDAO usuarioDAO;
 
     private static final Logger logger = LoggerFactory.getLogger(SubscriptionPageController.class);
 
@@ -39,8 +41,7 @@ public class SubscriptionPageController{
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(10);
 
         //Inserção de dados no BD
-        usuarioDAO usuarioDAO = new usuarioDAO();
-        usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail(), encoder.encode(usuario.getSenha()));
+        usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail().toLowerCase(), encoder.encode(usuario.getSenha()));
         logger.info("Sucesso ao cadastrar novo usuario");
 
         return "loginPage";

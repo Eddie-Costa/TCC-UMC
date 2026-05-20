@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import com.example.dto.LoginDTO;
-import DAO.usuarioDAO;
+import com.example.DAO.usuarioDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,8 +34,12 @@ public class ResetPaswordController {
     @Autowired
     private emailService emailService;
 
+    @Autowired
+    private usuarioDAO usuarioDAO;
+
     @GetMapping("/ResetPassword_Verification")
     public String ResetPasword_Verification() {
+
         return "ResetPassword_Verification";
     }
 
@@ -45,6 +49,7 @@ public class ResetPaswordController {
         String email = usuarioDTO.getEmail();
 
         session.setAttribute("email2FA", email);
+        session.setAttribute("redirect", "ResetPassword");
 
         //2FA
 
@@ -56,18 +61,23 @@ public class ResetPaswordController {
 
         logger.info("Solicitação de reset de senha para o email: {}", email);
 
-        return "redirect:/verificarReset";
+        return "redirect:/verificar";
     }
 
     @GetMapping("/ResetPassword")
-    public String ResetPasword(){
+    public String ResetPasword(HttpSession session){
+
+        if(session.getAttribute("email2FA") == null){
+            return "redirect:/ResetPassword_Verification";
+        }
+
         return "ResetPassword";
     }
 
     @PostMapping("/reset")
     public String Reset(@Valid @ModelAttribute("usuario") LoginDTO usuarioDTO, BindingResult result, Model model, HttpSession session) throws SQLException {
 
-        usuarioDAO usuarioDAO = new usuarioDAO();
+
         String email = (String) session.getAttribute("email2FA");
         String senha = usuarioDTO.getSenha();
 

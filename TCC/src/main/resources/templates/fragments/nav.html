@@ -18,7 +18,10 @@
         <div th:if="${session.usuarioLogado != null}" class="user-area">
 
             <a th:text="${session.usuarioLogado.email}"></a>
-            <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon">
+            
+            <a th:href="@{/profile}" class="user-profile">
+                <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon">
+            </a>
 
             <a th:if="${session.usuarioLogado != null}" th:href="@{/logout}" class="login">Logout</a>
 
