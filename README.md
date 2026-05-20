@@ -192,7 +192,7 @@ src
 |---|---|
 | ✅ | 5.1 Logs de autenticação registrados |
 | ✅ | 5.2 Logs de falhas e 2FA registrados |
-| ✅ | 5.3 Proteção contra alteração dos logs |
+| ❌ | 5.3 Proteção contra alteração dos logs |
 | ✅ | 5.4 Exemplo de análise de logs apresentado |
 
 ---
