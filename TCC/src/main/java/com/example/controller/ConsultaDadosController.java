@@ -32,6 +32,9 @@ public class ConsultaDadosController {
     @GetMapping("/UserData")
     public String ConsultaDados(HttpSession session) throws SQLException {
 
+    final Logger logger = LoggerFactory.getLogger(ResetPaswordController.class);
+
+
         if(session.getAttribute("usuarioLogado") == null){
             return "redirect:/login";
         }
@@ -45,6 +48,8 @@ public class ConsultaDadosController {
         String dia =  Arrayresultado.get(3).substring(8,10);
         String data = dia + "/" + mes + "/" + ano;
         session.setAttribute("dataRegistro", data);
+
+        logger.info("O usuario com email:" +session.getAttribute("email")+ " acessou a página de consulta de dados");
 
         return "UserData";
     }
@@ -70,6 +75,8 @@ public class ConsultaDadosController {
 
         emailService.enviarEmailDados(email, session.getAttribute("nome").toString(), session.getAttribute("sobrenome").toString(), session.getAttribute("email").toString(), session.getAttribute("dataRegistro").toString());
 
+        logger.info("O usuario com email:" +session.getAttribute("email")+ " exportou seus dados pessoais por email");
+
         return "UserData";
     }
 
@@ -83,7 +90,7 @@ public class ConsultaDadosController {
         String email = session.getAttribute("email2FA").toString();
 
         //2FA
-        logger.info("Envio de codigo 2FA par o email: {}", email);
+        logger.info("Envio de codigo 2FA para o email: {}", email);
 
         //Gerar token 2FA
         String codigo = twoFactorService.gerarCodigo(email);

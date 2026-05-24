@@ -1,0 +1,40 @@
+<configuration>
+
+    <!--APPENDER CONSOLE-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--APPENDER ARQUIVO POR SESSÃO-->
+    <appender name="SESSION_FILE" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator class="ch.qos.logback.classic.sift.MDCBasedDiscriminator">
+            <key>sessionId</key>
+            <defaultValue>no-session</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="FILE-${sessionId}" class="ch.qos.logback.core.FileAppender">
+                <file>logs/sessions/${usuario:-anonimo}-${sessionId}.log</file>
+                <encoder>
+                    <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+                </encoder>
+                <immediateFlush>true</immediateFlush>
+            </appender>
+        </sift>
+    </appender>
+
+
+    <!--SILENCIA FRAMEWORKS-->
+    <root level="OFF">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="SESSION_FILE"/>
+    </root>
+
+    <!--APENAS SEU PACOTE-->
+    <logger name="com.example" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="SESSION_FILE"/>
+    </logger>
+
+</configuration>

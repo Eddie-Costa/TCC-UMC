@@ -16,6 +16,7 @@ import com.example.service.TwoFactorService;
 import com.example.service.emailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 import java.sql.SQLException;
 
@@ -71,7 +72,7 @@ public class LoginPageController {
             loginAttemptService.loginSucesso(email);
 
             //2FA
-            logger.info("Envio de codigo 2FA par o email: {}", email);
+            logger.info("Envio de codigo 2FA para o email: {}", email);
 
             //Gerar token 2FA
             String codigo = twoFactorService.gerarCodigo(email);
@@ -88,13 +89,12 @@ public class LoginPageController {
         //Erro de Login
         logger.warn("Erro ao fazer login");
         loginAttemptService.loginFalhou(email);
-        logger.warn("Erro ao fazer login numero de tentativas: {}", loginAttemptService.getTentativas(email));
+        logger.warn("Erro ao fazer login para o usuario com email:" +email+ " ,numero de tentativas: {}", loginAttemptService.getTentativas(email));
 
         if (loginAttemptService.getTentativas(email) >= 5) {
-            logger.warn("Conta bloqueada por 10 minutos");
+            logger.warn("Conta com email:" +email+ " bloqueada por 10 minutos");
             model.addAttribute("mensagemDeErro", "Conta bloqueada por 10 minutos.");
         } else {
-            logger.warn("Email ou senha incorreto");
             model.addAttribute("mensagemDeErro", "Email ou senha inválidos.");
         }
         return "loginPage";

@@ -1,0 +1,4 @@
+2026-05-24 16:45:50 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 10396 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-05-24 16:45:50 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-05-24 16:45:56 INFO  com.example.TCC_Application - Started TCC_Application in 6.608 seconds (process running for 7.16)
+2026-05-24 16:46:04 INFO  c.e.controller.LoginPageController - Envio de codigo 2FA para o email: eddiealencarcosta@gmail.com
