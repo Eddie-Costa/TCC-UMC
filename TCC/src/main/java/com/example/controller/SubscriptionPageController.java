@@ -33,7 +33,7 @@ public class SubscriptionPageController{
     public String registrar(@Valid @ModelAttribute("usuario") SubscriptionDTO usuario, BindingResult result) throws SQLException {
 
         if (result.hasErrors()) {
-            logger.warn("Erro ao registrar o usuario: " + result.getAllErrors());
+            logger.warn("Erro ao registrar o usuario com email:" +usuario.getEmail()+ " Erro: " + result.getAllErrors());
             return "subscriptionPage";
         }
 
@@ -42,7 +42,7 @@ public class SubscriptionPageController{
 
         //Inserção de dados no BD
         usuarioDAO.InsertCadastroIntoBD(usuario.getNome(), usuario.getSobrenome(), usuario.getEmail().toLowerCase(), encoder.encode(usuario.getSenha()));
-        logger.info("Sucesso ao cadastrar novo usuario");
+        logger.info("Sucesso ao cadastrar novo usuario com email: " + usuario.getEmail());
 
         return "loginPage";
     }

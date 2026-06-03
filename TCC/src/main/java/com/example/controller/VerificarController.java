@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.DAO.usuarioDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 import java.sql.SQLException;
 
@@ -48,7 +49,7 @@ public class VerificarController {
                                   HttpSession session,
                                   Model model) throws SQLException {
 
-        if(session.getAttribute("redirect") == "Login"){
+        if(session.getAttribute("redirect").equals("Login")){
 
             String email = (String) session.getAttribute("email2FA");
 
@@ -59,7 +60,10 @@ public class VerificarController {
             }
 
             if (twoFactorService.validarCodigo(email, codigo)) {
-                logger.info("O usuario passou na validação de token para login");
+                MDC.put("usuario", email);
+                MDC.put("sessionId", session.getId());
+
+                logger.info("O usuario com email:" +email+ " passou na validação de token para login");
 
 
                 // BUSCA USUÁRIO REAL
@@ -68,11 +72,12 @@ public class VerificarController {
                 // CRIA SESSÃO CORRETA
                 session.setAttribute("usuarioLogado", usuario);
                 session.setMaxInactiveInterval(900);
-                logger.info("A sessão do usuario foi criada com sucesso ID: {}", session.getId());
+
+                logger.info("Sessão criada com sucesso | ID: {} | Email: {}", session.getId(), email);
 
                 return "redirect:/home";
             }
-        } else if (session.getAttribute("redirect") == "ResetPassword") {
+        } else if (session.getAttribute("redirect").equals("ResetPassword")){
 
             // Segurança: impedir acesso direto
             if (session.getAttribute("email2FA") == null) {
@@ -83,7 +88,7 @@ public class VerificarController {
             String email = (String) session.getAttribute("email2FA");
 
             if (twoFactorService.validarCodigo(email, codigo)) {
-                logger.info("O usuario passou na validação de token para Reset de senha");
+                logger.info("O usuario com email:" +email+ " passou na validação de token para Reset de senha");
 
                 // BUSCA USUÁRIO REAL
                 LoginDTO usuario = usuarioDAO.buscarPorEmail(email);
@@ -92,11 +97,11 @@ public class VerificarController {
             }else{
                 // Código inválido
                 model.addAttribute("erro", "Código inválido ou expirado");
-                logger.warn("Codigo 2FA inválido inserido");
+                logger.warn("Codigo 2FA inválido inserido para o usuario com email:" +email);
                 return "verificar";
             }
 
-        }else if (session.getAttribute("redirect") == "ExcluirDados"){
+        }else if (session.getAttribute("redirect").equals("ExcluirDados")){
 
             // Segurança: impedir acesso direto
             if (session.getAttribute("email2FA") == null) {
@@ -107,7 +112,7 @@ public class VerificarController {
             String email = (String) session.getAttribute("email2FA");
 
             if (twoFactorService.validarCodigo(email, codigo)) {
-                logger.info("O usuario passou na validação de token para Reset de senha");
+                logger.info("O usuario com email:" +email+ " passou na validação de token para Excluir dados");
 
                 usuarioDAO.DeleteUser(email);
 
@@ -117,7 +122,7 @@ public class VerificarController {
             }else{
                 // Código inválido
                 model.addAttribute("erro", "Código inválido ou expirado");
-                logger.warn("Codigo 2FA inválido inserido");
+                logger.warn("Codigo 2FA inválido inserido para o usuario com email:" +email);
                 return "verificar";
             }
         }
@@ -125,7 +130,7 @@ public class VerificarController {
 
         // Código inválido Geral
         model.addAttribute("erro", "Código inválido ou expirado");
-        logger.warn("Codigo 2FA inválido inserido");
+        logger.warn("Codigo 2FA inválido inserido para o usuario com email:" +session.getAttribute("email2FA"));
         return "verificar";
     }
 }
