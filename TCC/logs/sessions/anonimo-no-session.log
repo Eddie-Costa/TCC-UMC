@@ -59,3 +59,8 @@ Identify and stop the process that's listening on port 8443 or configure this ap
 2026-06-03 20:00:47 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 2124 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
 2026-06-03 20:00:47 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
 2026-06-03 20:00:53 INFO  com.example.TCC_Application - Started TCC_Application in 6.236 seconds (process running for 52.667)
+2026-06-03 20:06:05 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 2124 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-03 20:06:05 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-03 20:06:13 INFO  com.example.TCC_Application - Started TCC_Application in 7.534 seconds (process running for 371.813)
+2026-06-03 20:06:16 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 2124 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-03 20:06:16 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
