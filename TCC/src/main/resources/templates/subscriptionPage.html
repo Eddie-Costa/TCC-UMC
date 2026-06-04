@@ -6,6 +6,8 @@
     <link rel="stylesheet" th:href="@{/css/subscriptionStyle.css}">
     <link rel="stylesheet" href="css/subscriptionStyle.css">
     <link rel="stylesheet" href="../css/navStyle.css">
+    <link rel="stylesheet" th:href="@{/css/footerStyle.css}">
+
     <title>Registrar</title>
 </head>
 <div id="modalTermos" class="modal">
@@ -65,38 +67,42 @@
 <body>
     <div th:replace="fragments/nav :: nav"></div>
 
-    <h1 class="title">Registrar</h1>
-    <form action="/Subscription" th:object="${usuario}" method="post" class="form-login">
-        <label class="label_info">Nome</label>
-        <input name="nome" th:value="${nome}" type="text" id="nome" required class="textbox">
+    <main>
+        <h1 class="title">Registrar</h1>
+        <form action="/Subscription" th:object="${usuario}" method="post" class="form-login">
+            <label class="label_info">Nome</label>
+            <input name="nome" th:value="${nome}" type="text" id="nome" required class="textbox">
 
-        <label class="label_info">Sobrenome</label>
-        <input name="sobrenome" th:value="${sobrenome}" type="text" id="sobrenome" required class="textbox">
+            <label class="label_info">Sobrenome</label>
+            <input name="sobrenome" th:value="${sobrenome}" type="text" id="sobrenome" required class="textbox">
 
-        <label class="label_info">E-mail</label>
-        <input name="email" th:value="${email}" type="email" id="email" required class="textbox">
+            <label class="label_info">E-mail</label>
+            <input name="email" th:value="${email}" type="email" id="email" required class="textbox">
 
-        <div class="termos-container">
+            <div class="termos-container">
 
-            <label for="termos" class="label_info">Eu aceito os</label>
+                <label for="termos" class="label_info">Eu aceito os</label>
 
-            <span class="abrir-termos" onclick="abrirModal()">Termos de Uso</span>
+                <span class="abrir-termos" onclick="abrirModal()">Termos de Uso</span>
 
-            <input name="termos" type="checkbox" required class="checkbox" id="termos">
+                <input name="termos" type="checkbox" required class="checkbox" id="termos">
 
-        </div>
+            </div>
 
-        <label class="label_info">Senha:</label>
-        <input name="senha" th:value="${senha}" type="password" id="senha" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial" class="textbox">
+            <label class="label_info">Senha:</label>
+            <input name="senha" th:value="${senha}" type="password" id="senha" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$" title="A senha deve ter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e caractere especial" class="textbox">
 
-        <button type="submit" id="btnSubmit" disabled class="Sendbutton">Registrar</button>
+            <button type="submit" id="btnSubmit" disabled class="Sendbutton">Registrar</button>
 
-        <p name="mensagemDeErro" th:text="${mensagemDeErro}"></p>
+            <p name="mensagemDeErro" th:text="${mensagemDeErro}"></p>
 
-        <div class="linksuteis" >
-            <a href="/login" class="link_pull">Ja tem cadastro em nossa plataforma? clique aqui para Logar</a>
-        </div>
-    </form>
+            <div class="linksuteis" >
+                <a href="/login" class="link_pull">Ja tem cadastro em nossa plataforma? clique aqui para Logar</a>
+            </div>
+        </form>
+    </main>
+
+    <div th:replace="fragments/footer :: footer"></div>
 </body>
 <script>
     const campos = document.querySelectorAll("#nome, #sobrenome, #email, #senha");

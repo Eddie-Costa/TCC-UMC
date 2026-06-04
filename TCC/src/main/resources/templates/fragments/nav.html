@@ -6,27 +6,27 @@
     <link rel="stylesheet" href="../css/navStyle.css">
 </head>
 <body>
-<div th:fragment="nav" class="nav">
-    <nav class="nav-itens">
+    <div th:fragment="nav" class="nav">
+        <nav class="nav-itens">
 
-        <a th:href="@{/home}" class="logo"><img th:src="@{../js/images/LogoTravelBuddy.png}" alt="Logo" class="imagen-logo"></a>
+            <a th:href="@{/home}" class="logo"><img th:src="@{../js/images/LogoTravelBuddy.png}" alt="Logo" class="imagen-logo"></a>
 
-        <!-- Usuário NÃO logado -->
-        <a th:if="${session.usuarioLogado == null}" th:href="@{/login}" class="login">Login</a>
+            <!-- Usuário NÃO logado -->
+            <a th:if="${session.usuarioLogado == null}" th:href="@{/login}" class="login">Login</a>
 
-        <!-- Usuário logado -->
-        <div th:if="${session.usuarioLogado != null}" class="user-area">
+            <!-- Usuário logado -->
+            <div th:if="${session.usuarioLogado != null}" class="user-area">
 
-            <a th:text="${session.usuarioLogado.email}"></a>
-            
-            <a th:href="@{/profile}" class="user-profile">
-                <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon">
-            </a>
+                <a th:text="${session.usuarioLogado.email}"></a>
 
-            <a th:if="${session.usuarioLogado != null}" th:href="@{/logout}" class="login">Logout</a>
+                <a th:href="@{/profile}" class="user-profile">
+                    <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon">
+                </a>
 
-        </div>
-    </nav>
-</div>
+                <a th:if="${session.usuarioLogado != null}" th:href="@{/logout}" class="login">Logout</a>
+
+            </div>
+        </nav>
+    </div>
 </body>
 </html>

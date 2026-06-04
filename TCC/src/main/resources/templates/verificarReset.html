@@ -5,25 +5,33 @@
 
     <link rel="stylesheet" th:href="@{/css/verificarResetStyle.css}">
     <link rel="stylesheet" th:href="@{/css/navStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/footerStyle.css}">
+
 </head>
 
 <body>
 
-<div th:replace="fragments/nav :: nav"></div>
+    <div th:replace="fragments/nav :: nav"></div>
 
-<h2 class="title">Verificação duas etapas</h2>
+    <main>
 
-<form th:action="@{/ResetVerificar}" method="post" class="form-verificacao">
+        <h2 class="title">Verificação duas etapas</h2>
 
-    <label class="label_info">Código de verificação</label>
+        <form th:action="@{/ResetVerificar}" method="post" class="form-verificacao">
 
-    <input type="text" name="codigo" placeholder="Digite o código envia ao seu Email" required class="textbox">
+            <label class="label_info">Código de verificação</label>
 
-    <button type="submit" class="Sendbutton">Verificar</button>
+            <input type="text" name="codigo" placeholder="Digite o código envia ao seu Email" required class="textbox">
 
-</form>
+            <button type="submit" class="Sendbutton">Verificar</button>
 
-<p th:if="${erro}" th:text="${erro}" class="mensagemErro"></p>
+        </form>
+
+        <p th:if="${erro}" th:text="${erro}" class="mensagemErro"></p>
+
+    </main>
+
+    <div th:replace="fragments/footer :: footer"></div>
 
 </body>
 </html>

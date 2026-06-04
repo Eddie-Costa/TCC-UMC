@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"th:href="@{/css/profileStyle.css}">
     <link rel="stylesheet" th:href="@{/css/navStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/footerStyle.css}">
+
     <title>User Profile</title>
 </head>
 <body>
     <div th:replace="fragments/nav :: nav"></div>
 
-    <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon-profile">
+    <main>
 
-    <a th:href="@{/UserData}" class="Tratativa_dados">Meus Dados</a>
+        <img th:src="@{/js/images/UserIcon.png}" alt="Usuário" class="user-icon-profile">
+
+        <a th:href="@{/UserData}" class="Tratativa_dados">Meus Dados</a>
+
+    </main>
+
+    <div th:replace="fragments/footer :: footer"></div>
 
 </body>
 </html>

@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.imagen-logo{
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.imagen-logo {
     width: 60px;
     height: 60px;
 }
@@ -23,11 +34,7 @@
     z-index: 1000;
 }
 
-.body{
-    padding-top: 80px;
-}
-
-.nav-itens{
+.nav-itens {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,17 +42,17 @@
     padding: 0 30px;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     font-family: "Inter", sans-serif;
     font-weight: 800;
 }
 
-.logo:visited{
+.logo:visited {
     color: black;
 }
 
-.login{
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,27 +65,26 @@
     color: rgb(238, 238, 238);
     font-family: "Inter", sans-serif;
     font-weight: 800;
-
 }
 
-.login:hover{
+.login:hover {
     transition: background-color 0.2s ease;
     background-color: #1B4965;
 }
 
-.login:visited{
+.login:visited {
     color: rgb(238, 238, 238);
     text-decoration: none;
 }
 
-.user-icon{
+.user-icon {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.user-area{
+.user-area {
     display: flex;
     align-items: center;
     gap: 10px;
