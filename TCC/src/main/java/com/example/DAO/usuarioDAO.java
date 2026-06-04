@@ -15,8 +15,6 @@ import javax.sql.DataSource;
 @Repository
 public class usuarioDAO {
 
-    String resultado;
-    ArrayList<String> Arrayresultado = new ArrayList<>();
 
     @Autowired
     private DataSource dataSource;
@@ -49,6 +47,8 @@ public class usuarioDAO {
     }
 
     public String QueryLoginUsuario(String EMAIL) throws SQLException {
+        String resultado = "";
+
         // conexão
         Connection conn = dataSource.getConnection();
 
@@ -115,6 +115,8 @@ public class usuarioDAO {
         //Realizar Querys
         ResultSet rs = stmt.executeQuery();
 
+        ArrayList<String> Arrayresultado = new ArrayList<>();
+
         if (rs.next()) {
             Arrayresultado.add(rs.getString("NOME"));
             Arrayresultado.add(rs.getString("SOBRENOME"));
@@ -140,15 +142,12 @@ public class usuarioDAO {
         stmt.setString(2, EMAIL);
 
         System.out.println(stmt);
-        stmt.executeUpdate();
         int linhas = stmt.executeUpdate();
         System.out.println("Linhas afetadas: " + linhas);
 
         stmt.close();
         conn.close();
     }
-
-
 
     public LoginDTO buscarPorEmail(String email) throws SQLException {
 
@@ -163,12 +162,12 @@ public class usuarioDAO {
             usuario.setEmail(rs.getString("EMAIL"));
             usuario.setSenha(rs.getString("SENHA"));
 
-        // se tiver mais campos:
-
-        // usuario.setNome(rs.getString("nome"));
-
             return usuario;
         }
+
+        rs.close();
+        stmt.close();
+        conn.close();
         return null;
     }
 }

@@ -65,3 +65,120 @@ Identify and stop the process that's listening on port 8443 or configure this ap
 2026-06-03 20:06:16 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 2124 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
 2026-06-03 20:06:16 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
 2026-06-03 20:06:21 INFO  com.example.TCC_Application - Started TCC_Application in 5.443 seconds (process running for 380.619)
+2026-06-04 15:54:51 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 9164 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 15:54:51 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 15:54:59 INFO  com.example.TCC_Application - Started TCC_Application in 8.825 seconds (process running for 10.212)
+2026-06-04 15:55:28 INFO  c.e.controller.LoginPageController - Envio de codigo 2FA para o email: eddiealencarcosta@gmail.com
+2026-06-04 15:56:05 INFO  c.e.c.ResetPaswordController - O usuario com email:null acessou a página de perfil
+2026-06-04 15:56:07 INFO  c.e.c.ResetPaswordController - O usuario com email:eddiealencarcosta@gmail.com acessou a página de consulta de dados
+2026-06-04 15:56:28 INFO  c.e.controller.LoginPageController - O usuario com email:eddiealencarcosta@gmail.com exportou seus dados pessoais por email
+2026-06-04 16:04:08 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 672 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:04:08 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:04:15 INFO  com.example.TCC_Application - Started TCC_Application in 7.217 seconds (process running for 8.121)
+2026-06-04 16:04:46 INFO  c.e.controller.LoginPageController - Envio de codigo 2FA para o email: eddiealencarcosta@gmail.com
+2026-06-04 16:05:45 INFO  c.e.c.ResetPaswordController - O usuario com email:eddiealencarcosta@gmail.com acessou a página de consulta de dados
+2026-06-04 16:05:47 INFO  c.e.controller.LoginPageController - O usuario com email:eddiealencarcosta@gmail.com exportou seus dados pessoais por email
+2026-06-04 16:06:22 INFO  c.e.controller.LogoutController - Sessão encerrada para o usuário: null
+2026-06-04 16:06:22 INFO  c.e.controller.LogoutController - Sessão de ID: null invalidada
+2026-06-04 16:16:30 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 14880 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:16:30 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:16:36 INFO  com.example.TCC_Application - Started TCC_Application in 7.161 seconds (process running for 7.728)
+2026-06-04 16:18:33 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 12660 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:18:33 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:18:40 INFO  com.example.TCC_Application - Started TCC_Application in 7.213 seconds (process running for 7.827)
+2026-06-04 16:22:11 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 12660 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:22:11 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:22:14 INFO  com.example.TCC_Application - Started TCC_Application in 3.763 seconds (process running for 222.542)
+2026-06-04 16:22:16 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 12660 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:22:16 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:22:16 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.example.TCC_Application]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:288)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.TCC_Application.main(TCC_Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.io.FileNotFoundException: class path resource [com/example/controller/LoginPageController.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127)
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:355)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:283)
+	... 18 common frames omitted
+2026-06-04 16:22:18 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 12660 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:22:18 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:22:21 INFO  com.example.TCC_Application - Started TCC_Application in 3.651 seconds (process running for 229.634)
+2026-06-04 16:22:24 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 6244 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:22:24 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:22:32 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8443 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8443 or configure this application to listen on another port.
+
+2026-06-04 16:23:05 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 14160 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:23:05 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:23:13 INFO  com.example.TCC_Application - Started TCC_Application in 8.071 seconds (process running for 8.953)
+2026-06-04 16:24:26 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 14572 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:24:26 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:24:32 INFO  com.example.TCC_Application - Started TCC_Application in 7.356 seconds (process running for 8.034)
+2026-06-04 16:34:44 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 6520 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:34:44 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:34:50 INFO  com.example.TCC_Application - Started TCC_Application in 6.937 seconds (process running for 7.74)
+2026-06-04 16:39:53 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 2264 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:39:53 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:40:00 INFO  com.example.TCC_Application - Started TCC_Application in 7.072 seconds (process running for 7.688)
+2026-06-04 16:45:01 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 13904 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:45:01 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:45:07 INFO  com.example.TCC_Application - Started TCC_Application in 6.792 seconds (process running for 7.331)
+2026-06-04 16:50:06 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 14480 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:50:06 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:50:12 INFO  com.example.TCC_Application - Started TCC_Application in 6.736 seconds (process running for 7.315)
+2026-06-04 16:58:28 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 14480 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:58:28 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:58:41 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 15164 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 16:58:41 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 16:58:47 INFO  com.example.TCC_Application - Started TCC_Application in 7.021 seconds (process running for 7.548)
+2026-06-04 17:07:40 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 13540 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 17:07:40 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 17:07:47 INFO  com.example.TCC_Application - Started TCC_Application in 7.372 seconds (process running for 7.971)
+2026-06-04 17:08:22 INFO  c.e.controller.LoginPageController - Envio de codigo 2FA para o email: eddiealencarcosta@gmail.com
+2026-06-04 17:16:47 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 13540 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 17:16:47 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 17:16:50 INFO  com.example.TCC_Application - Started TCC_Application in 3.656 seconds (process running for 551.266)
+2026-06-04 17:17:30 INFO  com.example.TCC_Application - Starting TCC_Application using Java 23 with PID 9924 (C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC\target\classes started by eddie in C:\Users\eddie\OneDrive\Documentos\.git\TCC-UMC\TCC)
+2026-06-04 17:17:30 INFO  com.example.TCC_Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 17:17:37 INFO  com.example.TCC_Application - Started TCC_Application in 7.19 seconds (process running for 7.865)
+2026-06-04 17:19:12 INFO  c.e.controller.LoginPageController - Envio de codigo 2FA para o email: eddiealencarcosta@gmail.com
+2026-06-04 17:19:55 INFO  c.e.c.ResetPaswordController - O usuario com email:null acessou a página de perfil
+2026-06-04 17:19:57 INFO  c.e.c.ResetPaswordController - O usuario com email:eddiealencarcosta@gmail.com acessou a página de consulta de dados
+2026-06-04 17:19:59 INFO  c.e.controller.LoginPageController - O usuario com email:eddiealencarcosta@gmail.com exportou seus dados pessoais por email
+2026-06-04 17:20:34 INFO  c.e.controller.LogoutController - Sessão encerrada para o usuário: null
+2026-06-04 17:20:34 INFO  c.e.controller.LogoutController - Sessão de ID: null invalidada

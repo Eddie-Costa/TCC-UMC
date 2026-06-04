@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"th:href="@{/css/UserDataStyle.css}">
     <link rel="stylesheet" th:href="@{/css/navStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/footerStyle.css}">
+
     <title>Consulta aos Dados do Titular</title>
 </head>
 <body>
     <div th:replace="fragments/nav :: nav"></div>
 
-    <h1 class="title">Consulta de dados</h1>
-    
-    <div class="DadosUser">
+    <main>
 
-        <p class="label_info">Nome: <span name="nome" th:if="${session.usuarioLogado != null}" th:text="${session.nome}"></span> </p>
-        
-        <p class="label_info">Sobrenome: <span name="sobrenome" th:if="${session.usuarioLogado != null}" th:text="${session.sobrenome}"></span> </p>
+        <h1 class="title">Consulta de dados</h1>
 
-        <p class="label_info">Email: <span name="email" th:if="${session.usuarioLogado != null}" th:text="${session.email}"></span> </p>
+        <div class="DadosUser">
 
-        <p class="label_info">Data de Registro: <span name="dataRegistro" th:if="${session.usuarioLogado != null}" th:text="${session.dataRegistro}"></span> </p>
+            <p class="label_info">Nome: <span name="nome" th:if="${session.usuarioLogado != null}" th:text="${session.nome}"></span> </p>
 
-        <a th:href="@{/ExportarDados}" class="LinkExportar">Exportar Meus Dados</a>
+            <p class="label_info">Sobrenome: <span name="sobrenome" th:if="${session.usuarioLogado != null}" th:text="${session.sobrenome}"></span> </p>
 
-        <a th:href="@{/ExcluirDados}" class="LinkExportar">Excluir Meus Dados</a>
+            <p class="label_info">Email: <span name="email" th:if="${session.usuarioLogado != null}" th:text="${session.email}"></span> </p>
 
-        <a th:href="@{/profile}" class="LinkExportar">Voltar para o perfil</a>
+            <p class="label_info">Data de Registro: <span name="dataRegistro" th:if="${session.usuarioLogado != null}" th:text="${session.dataRegistro}"></span> </p>
 
-    </div>
+            <a th:href="@{/ExportarDados}" class="LinkExportar">Exportar Meus Dados</a>
+
+            <a th:href="@{/ExcluirDados}" class="LinkExportar">Excluir Meus Dados</a>
+
+            <a th:href="@{/profile}" class="LinkExportar">Voltar para o perfil</a>
+
+        </div>
+
+    </main>
+
+    <div th:replace="fragments/footer :: footer"></div>
 
 </body>
 </html>

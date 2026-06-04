@@ -3,7 +3,7 @@ package com.example.service;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
+import java.security.SecureRandom;
 
 @Service
 public class TwoFactorService {
@@ -11,7 +11,7 @@ public class TwoFactorService {
     private static Map<String, Long> expiracao = new HashMap<>();
 
     public static String gerarCodigo(String email) {
-        String codigo = String.valueOf(new Random().nextInt(900000) + 100000);
+        String codigo = String.valueOf(new SecureRandom().nextInt(900000) + 100000);
 
         codigos.put(email, codigo);
         expiracao.put(email, System.currentTimeMillis() + (5 * 60 * 1000)); // 5 min

@@ -13,7 +13,7 @@ public class emailService {
     @Autowired
     private JavaMailSender mailSender;
 
-    @Async
+    @Async("emailTaskExecutor")
     public void enviarCodigo(String para, String codigo) {
 
         SimpleMailMessage mensagem = new SimpleMailMessage();
@@ -28,7 +28,7 @@ public class emailService {
         System.out.println("Email enviado com sucesso!");
     }
 
-    @Async
+    @Async("emailTaskExecutor")
     public void enviarEmailDados(String para, String Nome, String Sobrenome, String Email, String DT_Reg) {
 
         SimpleMailMessage mensagem = new SimpleMailMessage();

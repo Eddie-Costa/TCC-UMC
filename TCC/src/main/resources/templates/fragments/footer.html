@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/footerStyle.css">
+</head>
+<body>
+    <div th:fragment="footer" class="footer">
+        <div id="modalTermos" class="modal">
+
+            <div class="modal-conteudo">
+
+                <span class="fechar" onclick="fecharModal()">
+                    &times;
+                </span>
+
+                <h2>Termos de Uso</h2>
+
+                <p>Versão: 1.0.0 Data: 16/05/2026</p>
+
+                <p>
+                    Ao realizar o cadastro na plataforma, o usuário declara estar ciente e concordar com a coleta e tratamento de seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD – Lei nº 13.709/2018).
+                    Os dados coletados incluem:
+                    Nome
+                    Sobrenome
+                    E-mail
+                    Senha
+                    As informações serão utilizadas exclusivamente para fins de identificação do usuário, autenticação de acesso, recuperação de conta, comunicação com a plataforma e utilização dos serviços oferecidos.
+                    A senha do usuário será armazenada de forma criptografada utilizando a tecnologia BCrypt, integrada ao framework Spring Boot, garantindo maior segurança e proteção das informações.
+                    O usuário poderá, a qualquer momento, solicitar consulta, exportação, atualização ou exclusão de seus dados pessoais, bem como revogar o consentimento concedido, conforme previsto pela LGPD.
+                    Ao selecionar a opção de aceite durante o cadastro, o usuário confirma que leu e concorda com os termos apresentados para tratamento de seus dados pessoais.
+                </p>
+
+                <p>
+                    A finalidade deste Termo de Consentimento é garantir transparência no tratamento dos dados pessoais coletados pela plataforma, assegurando que o titular esteja plenamente ciente sobre quais informações serão armazenadas, bem como os objetivos de sua utilização. Por meio deste consentimento, o usuário autoriza de forma livre, informada e inequívoca o tratamento de seus dados pessoais para fins de identificação, autenticação, segurança, comunicação e utilização dos serviços disponibilizados pela plataforma, em conformidade com os princípios e diretrizes estabelecidos pela Lei Geral de Proteção de Dados Pessoais.
+                </p>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            function abrirModal(){
+                document.getElementById("modalTermos").style.display = "block";
+            }
+
+            function fecharModal(){
+                document.getElementById("modalTermos").style.display = "none";
+            }
+
+            window.onclick = function(event){
+
+                const modal = document.getElementById("modalTermos");
+
+                if(event.target == modal){
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+
+
+        <footer class="footer-itens">
+
+            <div class="termos-container">
+
+                <span class="abrir-termos" onclick="abrirModal()">Termos de Uso</span>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>

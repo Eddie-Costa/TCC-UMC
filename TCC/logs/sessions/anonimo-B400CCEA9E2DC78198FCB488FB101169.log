@@ -1,0 +1,3 @@
+2026-06-04 16:05:41 INFO  c.e.controller.VerificarController - O usuario com email:eddiealencarcosta@gmail.com passou na validação de token para login
+2026-06-04 16:05:41 INFO  c.e.controller.VerificarController - Sessão criada com sucesso | ID: B400CCEA9E2DC78198FCB488FB101169 | Email: eddiealencarcosta@gmail.com
+2026-06-04 16:05:44 INFO  c.e.c.ResetPaswordController - O usuario com email:null acessou a página de perfil
